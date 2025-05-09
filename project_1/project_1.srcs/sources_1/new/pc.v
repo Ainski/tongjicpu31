@@ -1,12 +1,15 @@
+`timescale 1ns/1ps
 module pcreg(
     input pc_clk,
     input reset,
     input [31:0] mux1out,
     output [31:0] npc,
+    output reg [31:0] pc,
+    output [3:0] jpc
 
 );
-reg [31:0] pc;
 
+assign jpc =pc[31:28];
 always @(posedge pc_clk or posedge reset) begin
     if (reset) begin
         pc <= 0;
@@ -15,6 +18,6 @@ always @(posedge pc_clk or posedge reset) begin
     end
 end
 
-assign npc = pc + 1;
+assign npc = pc + 4;
 
 endmodule
