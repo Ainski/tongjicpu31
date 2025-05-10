@@ -26,8 +26,6 @@ module IMEM(
     initial begin
         $readmemb("IMEM.txt", IMEM);
     end
-    if (IM_R) begin
-        instr=IMEM[address[12:2]];
-    end
+    assign instr=IMEM[address[12:2]] & IM_R;
 
 endmodule
