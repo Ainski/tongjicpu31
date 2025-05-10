@@ -9,8 +9,8 @@ module IMEM(
     output [5:0] rdc,
     output [5:0] shamt,
     output [5:0] func,
-    output [16:0] imdt,//immediate
-    output [25:0] index
+    output [16:0] imdtT,//immediate
+    output [25:0] indexT
 
 );
     assign op=instr[31:26];
@@ -19,8 +19,8 @@ module IMEM(
     assign rdc=instr[15:11];
     assign shamt=instr[10:6];
     assign func=instr[5:0];
-    assign imdt=instr[16:0];
-    assign index=instr[25:0];
+    assign imdtT=instr[16:0];
+    assign indexT=instr[25:0];
 
     reg [31:0] IMEM [0:2047];
     initial begin
