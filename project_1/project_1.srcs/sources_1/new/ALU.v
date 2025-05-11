@@ -1,19 +1,19 @@
 `timescale 1ns / 1ps
 module alu( 
-input [31:0] a,   //32 ä½è¾“å…¥ï¼Œæ“ä½œæ•°1 
-input [31:0] b,   //32 ä½è¾“å…¥ï¼Œæ“ä½œæ•°2 
-input [3:0] aluc, //4ä½è¾“å…¥ï¼Œæ§åˆ¶ alu çš„æ“ä½œ 
-output reg [31:0] r, //32 ä½è¾“å‡ºï¼Œç”±aã€bç»è¿‡alucæŒ‡å®šçš„æ“ä½œç”Ÿæˆ 
+input [31:0] a,   //32 Î»ÊäÈë£¬²Ù×÷Êı1 
+input [31:0] b,   //32 Î»ÊäÈë£¬²Ù×÷Êı2 
+input [3:0] aluc, //4Î»ÊäÈë£¬¿ØÖÆ alu µÄ²Ù×÷ 
+output reg [31:0] r, //32 Î»Êä³ö£¬ÓÉa¡¢b¾­¹ıalucÖ¸¶¨µÄ²Ù×÷Éú³É 
 output reg zero,        
 output reg carry,    
-//0 æ ‡å¿—ä½ 
-  // è¿›ä½æ ‡å¿—ä½ 
-output reg negative,   // è´Ÿæ•°æ ‡å¿—ä½ 
-output reg overflow   // æº¢å‡ºæ ‡å¿—ä½ 
+//0 ±êÖ¾Î» 
+  // ½øÎ»±êÖ¾Î» 
+output reg negative,   // ¸ºÊı±êÖ¾Î» 
+output reg overflow   // Òç³ö±êÖ¾Î» 
 );
   always @ (*) begin 
     case (aluc) 
-      4'b0000://æ— ç¬¦å·åŠ æ³•
+      4'b0000://ÎŞ·ûºÅ¼Ó·¨
       begin
         r = a + b;
         zero = (r == 0);
@@ -21,7 +21,7 @@ output reg overflow   // æº¢å‡ºæ ‡å¿—ä½
         negative = (r[31] == 1);
         overflow = 0;
       end
-      4'b0010://æœ‰ç¬¦å·åŠ æ³•
+      4'b0010://ÓĞ·ûºÅ¼Ó·¨
       begin
         r = $signed(a) + $signed(b);
         zero = (r == 0);
@@ -29,7 +29,7 @@ output reg overflow   // æº¢å‡ºæ ‡å¿—ä½
         negative = (r[31] == 1);
         overflow = (a[31] & b[31] & ~r[31]) | (~a[31] & ~b[31] & r[31]);
       end
-      4'b0001://æ— ç¬¦å·å‡æ³•
+      4'b0001://ÎŞ·ûºÅ¼õ·¨
       begin
         r = a - b;
         zero = (r == 0);
@@ -37,7 +37,7 @@ output reg overflow   // æº¢å‡ºæ ‡å¿—ä½
         negative = (r[31] == 1);
         overflow = 0;
       end
-      4'b0011://æœ‰ç¬¦å·å‡æ³•
+      4'b0011://ÓĞ·ûºÅ¼õ·¨
       begin
         r = $signed(a) - $signed(b);
         zero = (r == 0);
@@ -45,7 +45,7 @@ output reg overflow   // æº¢å‡ºæ ‡å¿—ä½
         negative = (r[31] == 1);
         overflow = (~a[31] & b[31] & r[31]) | (a[31] & ~b[31] & ~r[31]);
       end
-      4'b0100://ä¸è¿ç®—
+      4'b0100://ÓëÔËËã
       begin
         r = a & b;
         zero = (r == 0);
@@ -53,7 +53,7 @@ output reg overflow   // æº¢å‡ºæ ‡å¿—ä½
         negative = (r[31] == 1);
         overflow = 0;
       end
-      4'b0101://æˆ–è¿ç®—
+      4'b0101://»òÔËËã
       begin
         r = a | b;
         zero = (r == 0);
@@ -61,7 +61,7 @@ output reg overflow   // æº¢å‡ºæ ‡å¿—ä½
         negative = (r[31] == 1);
         overflow = 0;
       end
-      4'b0110://å¼‚æˆ–è¿ç®—
+      4'b0110://Òì»òÔËËã
       begin
         r = a ^ b;
         zero = (r == 0);
@@ -69,7 +69,7 @@ output reg overflow   // æº¢å‡ºæ ‡å¿—ä½
         negative = (r[31] == 1);
         overflow = 0;
       end
-      4'b0111://norè¿ç®—
+      4'b0111://norÔËËã
       begin
         r = ~(a | b);
         zero = (r == 0);
@@ -77,7 +77,7 @@ output reg overflow   // æº¢å‡ºæ ‡å¿—ä½
         negative = (r[31] == 1);
         overflow = 0;
       end
-      4'b1000://Luiè¿ç®—
+      4'b1000://LuiÔËËã
       begin
         r={b[15:0],16'b0};
         zero = (r==0);
@@ -85,7 +85,7 @@ output reg overflow   // æº¢å‡ºæ ‡å¿—ä½
         negative = (r[31] == 1);
         overflow = 0;
       end
-      4'b1001://Luiè¿ç®—
+      4'b1001://LuiÔËËã
       begin
         r={b[15:0],16'b0};
         zero = (r==0);
@@ -93,7 +93,7 @@ output reg overflow   // æº¢å‡ºæ ‡å¿—ä½
         negative = (r[31] == 1);
         overflow = 0;
       end
-      4'b1011://Sltè¿ç®—
+      4'b1011://SltÔËËã
       begin
         r = ($signed(a) < $signed(b));
         zero = (($signed(a) - $signed(b)) == 0);
@@ -101,7 +101,7 @@ output reg overflow   // æº¢å‡ºæ ‡å¿—ä½
         negative = ($signed(a) < $signed(b));
         overflow = 0;
       end
-      4'b1010://Sltuè¿ç®—
+      4'b1010://SltuÔËËã
       begin
         r = (a < b);
         zero = ((a-b) == 0);
@@ -109,11 +109,11 @@ output reg overflow   // æº¢å‡ºæ ‡å¿—ä½
         negative = (r[31] == 1);
         overflow = 0;
       end
-      4'b1100://Sraè¿ç®—
+      4'b1100://SraÔËËã
       begin
         r=($signed(b) >>> $signed(a));
         zero = (r == 0);
-        //carryä¸ºæœ€åä¸€æ¬¡è¢«ç§»å‡ºçš„ä½çš„æ•°å€¼
+        //carryÎª×îºóÒ»´Î±»ÒÆ³öµÄÎ»µÄÊıÖµ
         if(a<32&&a>0)
             carry = b[a];
         else if(a==0)
@@ -127,7 +127,7 @@ output reg overflow   // æº¢å‡ºæ ‡å¿—ä½
       begin
         r=b>>a;
         zero = (r == 0);
-        //carryä¸ºæœ€åä¸€æ¬¡è¢«ç§»å‡ºçš„ä½çš„æ•°å€¼
+        //carryÎª×îºóÒ»´Î±»ÒÆ³öµÄÎ»µÄÊıÖµ
         if(a<32&&a>0)
             carry = b[a];
         else
@@ -139,7 +139,7 @@ output reg overflow   // æº¢å‡ºæ ‡å¿—ä½
       begin
         r=b<<a;
         zero = (r == 0);
-        //carryä¸ºæœ€åä¸€æ¬¡è¢«ç§»å‡ºçš„ä½çš„æ•°å€¼
+        //carryÎª×îºóÒ»´Î±»ÒÆ³öµÄÎ»µÄÊıÖµ
         if(a<32&&a>0)
             carry=b[32-a];
         else
@@ -151,7 +151,7 @@ output reg overflow   // æº¢å‡ºæ ‡å¿—ä½
       begin
         r=b<<a;
         zero = (r == 0);
-        //carryä¸ºæœ€åä¸€æ¬¡è¢«ç§»å‡ºçš„ä½çš„æ•°å€¼
+        //carryÎª×îºóÒ»´Î±»ÒÆ³öµÄÎ»µÄÊıÖµ
         carry = b[31];
         negative = (r[31] == 1);
         overflow = 0;

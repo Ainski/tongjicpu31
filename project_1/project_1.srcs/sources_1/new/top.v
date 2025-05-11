@@ -60,7 +60,7 @@ alu alu_inst(
     .zero(zero)
 );
 
-control control_inst(
+controller controller_inst(
     .Btype(Btype),
     .DM_R(DM_R),
     .DM_W(DM_W),
@@ -89,7 +89,7 @@ DMEM dmem_inst(
     .rt(rt)
 );
 
-indt_ext indt_ext_inst(
+imdt_ext imdt_ext_inst(
     .imdt(imdt),
     .imdtT(imdtT),
     .su(su)
@@ -185,6 +185,14 @@ regfile regfile_inst(
 shamt_ext shamt_ext_inst(
     .shamt(shamt),
     .shamtT(shamtT)
+);
+
+mux2 mux2_inst(
+    .M2(M2),
+    .NPC(npc),
+    .r(r),
+    .dmemdata(DMEMdata),
+    .rdd(rdd)
 );
 
 endmodule

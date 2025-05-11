@@ -1,5 +1,5 @@
 module DMEM(
-    input clk, //异步信号
+    input clk, //�첽�ź�
     input [31:0] rt,
     input [31:0] DMEMaddr, //r,F
     input CS,
@@ -9,7 +9,9 @@ module DMEM(
 );
 
 reg [31:0] DMEM [0:2047];
-$readmemh("DMEM.txt", DMEM);
+initial begin
+    $readmemb("DMEM.txt", DMEM);
+end
 always @(negedge clk) begin
     if(CS) begin
         if(DM_W) begin

@@ -1,5 +1,4 @@
 module controller(
-    input clk,
     input [5:0] op,
     input [5:0] func,
     output [1:0]M1,
@@ -10,7 +9,6 @@ module controller(
     output M6,
     output IM_R,
     output RF_W,
-    output RF_CLK,
     output su,
     output aluc,
     output CS,
@@ -121,7 +119,6 @@ module controller(
     assign M1=(jrT)?2'b10:(jT||jalT)?2'b01:2'b00;
     assign IM_R=1;
     assign RF_W=(jrT|lwT|swT|beqT|bneT|jT|jalT)?0:1;
-    assign RF_CLK=clk;
     assign su=(addiT|andiT|oriT|xoriT|lwT|swT|beqT|bneT|sltiT)?1:0;
     assign M2=(lwT)?2'b01:(jalT)?2'b10:2'b00;
     assign M4=(sllT|srlT|sraT)?2'b01:(addi|addiu|andi|ori|xori|lw|sw|beq|bne|slti|sltiu|lui)?2'b10:2'b00;

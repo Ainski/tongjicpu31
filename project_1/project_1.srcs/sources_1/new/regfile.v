@@ -13,19 +13,19 @@ module regfile(
 
     reg [31:0] regfile [0:31];
 
-    integer i;  // å£°æ˜å¾ªç¯å˜é‡
+    integer i;  // ÉùÃ÷Ñ­»·±äÁ¿
 
     always @(negedge RF_CLK) begin
         if (RF_RST) begin
-            for (i = 0; i < 32; i++) begin
-                regfile[i] <= 32'h0;  // å¤ä½æ‰€æœ‰å¯„å­˜å™¨ä¸º0
+            for (i = 0; i < 32; i=i+1) begin
+                regfile[i] <= 32'h0;  // ¸´Î»ËùÓĞ¼Ä´æÆ÷
             end
-        end else if (RF_W && mux3out != 6'b0) begin  // é¿å…å†™å…¥é›¶å¯„å­˜å™¨
+        end else if (RF_W && mux3out != 6'b0) begin  // ±ÜÃâĞ´ÈëÁã¼Ä´æÆ÷
             regfile[mux3out] <= rdd;
         end 
     end
     
-    // è¾“å‡ºé€»è¾‘ä¿æŒä¸å˜
+    // Êä³öÂß¼­±£³Ö²»±ä
     assign rt = regfile[rtc];
     assign rd = regfile[rsc];
     assign rs = regfile[mux3out];

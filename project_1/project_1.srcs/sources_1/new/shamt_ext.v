@@ -2,6 +2,6 @@ module shamt_ext(
     input [4:0] shamtT,
     output [31:0] shamt
 );
-    // é›¶æ‰©å±•ï¼šå°†5ä½shamtTæ‰©å±•ä¸º32ä½ï¼Œé«˜27ä½è¡¥é›¶
+    // ÁãÀ©Õ¹£º½«5Î»shamtTÀ©Õ¹Îª32Î»£¬¸ß27Î»²¹Áã
     assign shamt = {27'b0, shamtT};
 endmodule
