@@ -1,5 +1,5 @@
 module mux2(
-    input [31:0] NPC,aluc,dmemdata
+    input [31:0] NPC,aluc,dmemdata,
     input [1:0] M2,
     output [31:0] rdd
 );

@@ -122,9 +122,9 @@ module controller(
     assign IM_R=1;
     assign RF_W=(jrT|lwT|swT|beqT|bneT|jT|jalT)?0:1;
     assign RF_CLK=clk;
-    assign su=(addiT|andiT|oriT,xoriT,lwT,swT,beqT,bneT,sltiT)?1:0;
+    assign su=(addiT|andiT|oriT|xoriT|lwT|swT|beqT|bneT|sltiT)?1:0;
     assign M2=(lwT)?2'b01:(jalT)?2'b10:2'b00;
-    assign M4=(sllT|srlT|sraT|)?2'b01:(addi|addiu|andi|ori|xori|lw|sw|beq|bne|slti|sltiu|lui)?2'b10:2'b00;
+    assign M4=(sllT|srlT|sraT)?2'b01:(addi|addiu|andi|ori|xori|lw|sw|beq|bne|slti|sltiu|lui)?2'b10:2'b00;
     assign CS=(lwT|swT)?1:0;
     assign DM_W=(swT)?1:0;
     assign DM_R=(lwT)?1:0;
@@ -143,7 +143,7 @@ module controller(
     (srlT)?srl_aluc:
     (sraT)?sra_aluc:
     (luiT)?lui_aluc:0;
-    assign M5=(sllT|srlT|sraT|addiT|addiuT|andiT|oriT|xoriT|)?2'b11:(luiT)?2'b10:2'b00;
+    assign M5=(sllT|srlT|sraT|addiT|addiuT|andiT|oriT|xoriT)?2'b11:(luiT)?2'b10:2'b00;
     assign M6=(beqT)?1:0;
     assign M3=(lwT|swT|sltiT|sltiuT|luiT)?2'b10:(jalT)?2'b01:2'b00;
 endmodule 
