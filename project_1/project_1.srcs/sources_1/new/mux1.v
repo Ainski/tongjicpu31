@@ -1,3 +1,4 @@
+`timescale 1ns/1ps
 module mux1 (
     input wire [31:0] jextend,
     input wire [31:0] NPCout,

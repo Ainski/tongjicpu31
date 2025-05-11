@@ -1,7 +1,7 @@
 module DMEM(
     input clk, //异步信号
     input [31:0] rt
-    input [31:0] DMEMaddr,//aluc,F
+    input [31:0] DMEMaddr,//r,F
     input CS,
     input DM_W,
     input DM_R,
