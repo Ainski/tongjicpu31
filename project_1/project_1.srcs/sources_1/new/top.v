@@ -1,5 +1,7 @@
+`timescale 1ns / 1ps
 module top(
     input clk,
+    input reset,
     output [31:0] NPCout,
     output [31:0] a,
     output [31:0] b,
@@ -25,7 +27,7 @@ module top(
     output [4:0] shamtT,
     output [3:0] aluc,
     output [3:0] jpc,
-    output [16:0] imdtT,
+    output [15:0] imdtT,
     output [1:0] M1,
     output [1:0] M2,
     output [1:0] M3,
@@ -43,42 +45,97 @@ module top(
     output RF_CLK,
     output RF_R,
     output RF_W,
-    output reset,
     output su,
     output zero,
-    output Ze
+    output Ze,
+    output [31:0] regfile0,regfile1,regfile2,regfile3,regfile4,regfile5,regfile6,regfile7,
+    regfile8,regfile9,regfile10,regfile11,regfile12,regfile13,regfile14,regfile15,
+    regfile16,regfile17,regfile18,regfile19,regfile20,regfile21,regfile22,regfile23,
+    regfile24,regfile25,regfile26,regfile27,regfile28,regfile29,regfile30,regfile31
 );
 
-alu alu_inst(
-    .a(a),
-    .aluc(aluc),
-    .b(b),
-    .carry(carry),
-    .negative(negative),
-    .overflow(overflow),
-    .r(r),
-    .zero(zero)
+cpu sccpu(
+        .clk(clk),
+        .NPCout(NPCout),
+        .a(a),
+        .b(b),
+        .DMEMdata(DMEMdata),
+        .imdt(imdt),
+        .index(index),
+        .instr(instr),
+        .jextend(jextend),
+        .mux3out(mux3out),
+        .npc(npc),
+        .pc(pc),
+        .rd(rd),
+        .rdd(rdd),
+        .r(r),
+        .rs(rs),
+        .rt(rt),
+        .shamt(shamt),
+        .func(func),
+        .op(op),
+        .rdc(rdc),
+        .rsc(rsc),
+        .rtc(rtc),
+        .shamtT(shamtT),
+        .aluc(aluc),
+        .jpc(jpc),
+        .imdtT(imdtT),
+        .M1(M1),
+        .M2(M2),
+        .M3(M3),
+        .M4(M4),
+        .M5(M5),
+        .Btype(Btype),
+        .carry(carry),
+        .CS(CS),
+        .DM_R(DM_R),
+        .DM_W(DM_W),
+        .IM_R(IM_R),
+        .M6(M6),
+        .negative(negative),
+        .overflow(overflow),
+        .RF_CLK(RF_CLK),
+        .RF_R(RF_R),
+        .RF_W(RF_W),
+        .reset(reset),
+        .su(su),
+        .zero(zero),
+        .Ze(Ze),
+        .regfile0(regfile0),
+        .regfile1(regfile1),
+        .regfile2(regfile2),
+        .regfile3(regfile3),
+        .regfile4(regfile4),
+        .regfile5(regfile5),
+        .regfile6(regfile6),
+        .regfile7(regfile7),
+        .regfile8(regfile8),
+        .regfile9(regfile9),
+        .regfile10(regfile10),
+        .regfile11(regfile11),
+        .regfile12(regfile12),
+        .regfile13(regfile13),
+        .regfile14(regfile14),
+        .regfile15(regfile15),
+        .regfile16(regfile16),
+        .regfile17(regfile17),
+        .regfile18(regfile18),
+        .regfile19(regfile19),
+        .regfile20(regfile20),
+        .regfile21(regfile21),
+        .regfile22(regfile22),
+        .regfile23(regfile23),
+        .regfile24(regfile24),
+        .regfile25(regfile25),
+        .regfile26(regfile26),
+        .regfile27(regfile27),
+        .regfile28(regfile28),
+        .regfile29(regfile29),
+        .regfile30(regfile30),
+        .regfile31(regfile31)
 );
-
-controller controller_inst(
-    .Btype(Btype),
-    .DM_R(DM_R),
-    .DM_W(DM_W),
-    .IM_R(IM_R),
-    .M1(M1),
-    .M2(M2),
-    .M3(M3),
-    .M4(M4),
-    .M5(M5),
-    .M6(M6),
-    .RF_W(RF_W),
-    .aluc(aluc),
-    .func(func),
-    .op(op),
-    .CS(CS),
-    .su(su)
-);
-
 DMEM dmem_inst(
     .CS(CS),
     .DM_R(DM_R),
@@ -88,13 +145,6 @@ DMEM dmem_inst(
     .clk(clk),
     .rt(rt)
 );
-
-imdt_ext imdt_ext_inst(
-    .imdt(imdt),
-    .imdtT(imdtT),
-    .su(su)
-);
-
 IMEM imem_inst(
     .IM_R(IM_R),
     .address(pc),
@@ -109,90 +159,5 @@ IMEM imem_inst(
     .shamtT(shamtT)
 );
 
-jextend jextend_inst(
-    .index(index),
-    .jextend(jextend),
-    .jpc(jpc)
-);
-
-mux1 mux1_inst(
-    .M1(M1),
-    .NPCout(NPCout),
-    .jextend(jextend),
-    .mux1out(mux1out),
-    .rs(rs)
-);
-
-mux3 mux3_inst(
-    .M3(M3),
-    .rdc(rdc),
-    .rtc(rtc),
-    .mux3out(mux3out)
-);
-
-mux4 mux4_inst(
-    .M4(M4),
-    .imdt(imdt),
-    .rt(rt),
-    .shamt(shamt),
-    .b(b)
-);
-
-mux5 mux5_inst(
-    .M5(M5),
-    .imdt(imdt),
-    .rt(rt),
-    .rs(rs),
-    .a(a)
-);
-
-mux6 mux6_inst(
-    .M6(M6),
-    .Ze(Ze),
-    .zero(zero)
-);
-
-npcmaker npcmaker_inst(
-    .Btype(Btype),
-    .Ze(Ze),
-    .imdt(imdt),
-    .npc(npc),
-    .npc_out(NPCout)
-);
-
-pcreg pc_inst(
-    .jpc(jpc),
-    .mux1out(mux1out),
-    .npc(npc),
-    .pc(pc),
-    .pc_clk(clk),
-    .reset(reset)
-);
-
-regfile regfile_inst(
-    .RF_CLK(clk),
-    .RF_RST(reset),
-    .RF_W(RF_W),
-    .mux3out(mux3out),
-    .rd(rd),
-    .rdd(rdd),
-    .rsc(rsc),
-    .rs(rs),
-    .rtc(rtc),
-    .rt(rt)
-);
-
-shamt_ext shamt_ext_inst(
-    .shamt(shamt),
-    .shamtT(shamtT)
-);
-
-mux2 mux2_inst(
-    .M2(M2),
-    .NPC(npc),
-    .r(r),
-    .dmemdata(DMEMdata),
-    .rdd(rdd)
-);
 
 endmodule

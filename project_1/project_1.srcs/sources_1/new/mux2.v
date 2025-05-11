@@ -1,3 +1,4 @@
+`timescale 1ns / 1ps
 module mux2(
     input [31:0] NPC,r,dmemdata,
     input [1:0] M2,

@@ -1,3 +1,4 @@
+`timescale 1ns / 1ps
 module imdt_ext(
     input [15:0] imdtT,
     input su,

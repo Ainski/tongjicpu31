@@ -1,3 +1,4 @@
+`timescale 1ns / 1ps
 module controller(
     input [5:0] op,
     input [5:0] func,

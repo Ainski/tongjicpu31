@@ -1,3 +1,4 @@
+`timescale 1ns / 1ps
 module jextend(
     input [3:0]jpc,
     input [25:0] index,

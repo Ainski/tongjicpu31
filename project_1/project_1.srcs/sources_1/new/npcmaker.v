@@ -1,3 +1,4 @@
+`timescale 1ns / 1ps
 module npcmaker(
     input [31:0] imdt,
     input [31:0] npc,

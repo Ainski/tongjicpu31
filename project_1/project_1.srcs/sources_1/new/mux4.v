@@ -1,3 +1,4 @@
+`timescale 1ns / 1ps
 module mux4(
     input [31:0] rt,shamt,imdt,
     input [1:0] M4,

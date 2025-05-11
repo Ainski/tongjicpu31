@@ -1,3 +1,4 @@
+`timescale 1ns / 1ps
 module mux3(
     input [4:0] rtc,
     input [4:0] rdc,

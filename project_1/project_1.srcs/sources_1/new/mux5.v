@@ -1,3 +1,4 @@
+`timescale 1ns / 1ps
 module mux5(
     input wire [31:0] rt,
     input wire [31:0] rs,

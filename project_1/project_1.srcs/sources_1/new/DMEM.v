@@ -1,3 +1,4 @@
+`timescale 1ns / 1ps
 module DMEM(
     input clk, //“Ï≤Ω–≈∫≈
     input [31:0] rt,

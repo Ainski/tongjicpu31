@@ -1,3 +1,4 @@
+`timescale 1ns / 1ps
 module mux6(
     input zero,
     input M6,
