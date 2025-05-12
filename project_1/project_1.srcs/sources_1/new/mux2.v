@@ -6,6 +6,6 @@ module mux2(
 );
 assign rdd = (M2 == 2'b00)? r : 
     (M2 == 2'b01)? dmemdata : 
-    (M2 == 2'b10)? NPC : 
+    (M2 == 2'b10)? NPC+32'h00400000 : 
     32'h0;
 endmodule

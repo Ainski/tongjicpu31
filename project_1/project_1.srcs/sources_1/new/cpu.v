@@ -32,7 +32,7 @@ module cpu(
     output [1:0] M1,
     output [1:0] M2,
     output [1:0] M3,
-    output [1:0] M4,
+    output M4,
     output [1:0] M5,
     output Btype,
     output carry,
@@ -139,13 +139,12 @@ mux4 mux4_inst(
     .M4(M4),
     .imdt(imdt),
     .rt(rt),
-    .shamt(shamt),
     .b(b)
 );
 
 mux5 mux5_inst(
     .M5(M5),
-    .imdt(imdt),
+    .shamt(shamt),
     .rt(rt),
     .rs(rs),
     .a(a)

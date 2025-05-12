@@ -87,15 +87,15 @@ module regfile(
         end
     end
         
-    always @(posedge RF_CLK or RF_RST) begin
-        if (RF_RST && RF_W && mux3out != 6'b0) begin  // 避免写入零寄存器
+    always @(posedge RF_CLK) begin
+        if (!RF_RST && RF_W && mux3out != 6'b0) begin  // 避免写入零寄存器
             array_reg[mux3out] <= rdd;
         end 
     end
     
     // 输出逻辑保持不变
     assign rt = array_reg[rtc];
-    assign rd = array_reg[rsc];
-    assign rs = array_reg[mux3out];
+    assign rd = array_reg[mux3out];
+    assign rs = array_reg[rsc];
 
 endmodule

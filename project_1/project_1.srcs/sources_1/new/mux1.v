@@ -14,5 +14,5 @@ module mux1 (
 assign mux1out = 
     (M1 == 2'b00)? NPCout :
     (M1 == 2'b01)? jextend :
-    (M1 == 2'b10)?rs:32'b0;
+    (M1 == 2'b10)?rs-32'h00400000:32'b0;
 endmodule

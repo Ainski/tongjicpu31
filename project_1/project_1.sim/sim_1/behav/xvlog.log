@@ -36,5 +36,6 @@ INFO: [VRFC 10-2263] Analyzing Verilog file "E:/github/cpu31/project_1/project_1
 INFO: [VRFC 10-311] analyzing module sccomp_dataflow
 INFO: [VRFC 10-2263] Analyzing Verilog file "E:/github/cpu31/project_1/project_1.srcs/sim_1/new/top_tb.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module _246tb_ex9_tb
+WARNING: [VRFC 10-756] identifier count is used before its declaration [E:/github/cpu31/project_1/project_1.srcs/sim_1/new/top_tb.v:155]
 INFO: [VRFC 10-2263] Analyzing Verilog file "E:/github/cpu31/project_1/project_1.sim/sim_1/behav/glbl.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module glbl

@@ -31,7 +31,7 @@ module sccomp_dataflow(
     output [1:0] M1,
     output [1:0] M2,
     output [1:0] M3,
-    output [1:0] M4,
+    output M4,
     output [1:0] M5,
     output Btype,
     output carry,

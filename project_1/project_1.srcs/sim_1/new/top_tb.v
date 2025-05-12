@@ -15,7 +15,7 @@ module _246tb_ex9_tb;
         wire [1:0] M1;
         wire [1:0] M2;
         wire [1:0] M3;
-        wire [1:0] M4;
+        wire M4;
         wire [1:0] M5;
         wire M6;
         wire [3:0] aluc;
@@ -152,7 +152,7 @@ initial begin
 		// Initialize Inputs
 		clk_in = 0;
 		reset = 1;
-
+		count=0;
 		// Wait 100 ns for global reset to finish
 		#50;
         reset = 0;		
@@ -161,14 +161,15 @@ initial begin
 		//#100;
 		//$fclose(file_output);
 	end
-   
+    reg [31:0]count;
 	always begin		
-	if(pc==32'hxxxxxxxx)begin
-	   $finish;
+	if(count==200)begin
+           $finish;
 	end
 	#50;	
 	clk_in = ~clk_in;
-	if(clk_in == 1'b1) begin	
+	if(clk_in == 1'b0) begin	
+	        count=count+1;
 			$fdisplay(file_output, "pc: %h", pc);	
 			$fdisplay(file_output, "instr: %h", inst);
 			$fdisplay(file_output, "regfile0: %h", _246tb_ex9_tb.uut.sccpu.cpu_ref.array_reg[0]);

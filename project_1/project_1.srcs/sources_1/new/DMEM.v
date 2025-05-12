@@ -16,11 +16,12 @@ reg [31:0] DMEM [0:2047];
 always @(posedge clk) begin
     if(CS) begin
         if(DM_W) begin
-            DMEM[DMEMaddr] <= rt;
+            DMEM[DMEMaddr[12:2]] <= rt;
         end
     end
 end
-assign DMEMdata = DMEM[DMEMaddr]&CS&DM_R;
+//assign DMEMdata = DMEM[DMEMaddr]&CS&DM_R;
+assign DMEMdata = (CS&&DM_R)?DMEM[DMEMaddr[12:2]]:31'b0;
 
 
 endmodule

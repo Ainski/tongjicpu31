@@ -8,7 +8,7 @@ module npcmaker(
 );
 
 wire [31:0] npc_out_wire;
-assign npc_out_wire = imdt + npc;
+assign npc_out_wire = (imdt<<2) + npc;
 
 assign npc_out =(Ze&Btype)? npc_out_wire : npc;
 endmodule

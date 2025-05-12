@@ -4,5 +4,5 @@ module jextend(
     input [25:0] index,
     output [31:0] jextend
 );
-    assign jextend={jpc, index,2'b0};
+    assign jextend={jpc, index[25:21],1'b0,index[19:0],2'b0};
 endmodule
