@@ -1,6 +1,6 @@
 `timescale 1ns / 1ps
 module DMEM(
-    input clk, //Òì²½ÐÅºÅ
+    input clk, //ï¿½ì²½ï¿½Åºï¿½
     input [31:0] rt,
     input [31:0] DMEMaddr, //r,F
     input CS,
@@ -10,10 +10,10 @@ module DMEM(
 );
 
 reg [31:0] DMEM [0:2047];
-initial begin
-    $readmemb("DMEM.txt", DMEM);
-end
-always @(negedge clk) begin
+//initial begin
+//    $readmemb("DMEM.txt", DMEM);
+//end
+always @(posedge clk) begin
     if(CS) begin
         if(DM_W) begin
             DMEM[DMEMaddr] <= rt;

@@ -1,0 +1,45 @@
+Unable to capture context for thread 17568 in process 46176, can not generate back trace
+Unable to capture context for thread 30764 in process 46176, can not generate back trace
+Unable to capture context for thread 29528 in process 46176, can not generate back trace
+Unable to capture context for thread 42500 in process 46176, can not generate back trace
+Unable to capture context for thread 27800 in process 46176, can not generate back trace
+Unable to capture context for thread 17568 in process 46176, can not generate back trace
+Unable to capture context for thread 30764 in process 46176, can not generate back trace
+Unable to capture context for thread 29528 in process 46176, can not generate back trace
+Unable to capture context for thread 42500 in process 46176, can not generate back trace
+Unable to capture context for thread 27800 in process 46176, can not generate back trace
+Exception at PC 0x00007FFE7765BB93
+Printing stacktrace...
+
+Exception at PC 0x00007FFEE946933A
+Exception at PC 0x00007FFEE946933A
+Exception at PC 0x00007FFEE946933A
+[0]  [0x00007FFE7765BB93]
+[1]  [0x00007FFE7765BB93]
+[2]  [0x00007FFE7765B4A1]
+[3]  [0x00007FFE7765B459]
+[4]  [0x00007FFE776419FE]
+[5]  [0x00007FFE77640ED1]
+[6]  [0x00007FFE77640D76]
+[7]  [0x00007FFE775E79F6]
+[8]  [0x00007FFE775D7AFB]
+[9]  [0x00007FFE776FE90A]
+[10]  [0x00007FFE77719F87]
+[11]  [0x00007FFE7771A05F]
+[12] (BaseThreadInitThunk+0x17) [0x00007FFEE999E8D7]
+[13] (RtlUserThreadStart+0x2c) [0x00007FFEEBAF14FC]
+Done
+Exception at PC 0x00007FFEE946933A
+Exception at PC 0x00007FFEE946933A
+Exception at PC 0x00007FFEE946933A
+Exception at PC 0x00007FFEE946933A
+Exception at PC 0x00007FFEE946933A
+Exception at PC 0x00007FFEE946933A
+Exception at PC 0x00007FFEE946933A
+Exception at PC 0x00007FFEE946933A
+Exception at PC 0x00007FFEE946933A
+Exception at PC 0x00007FFEE946933A
+Exception at PC 0x00007FFEE946933A
+Exception at PC 0x00007FFEE946933A
+Exception at PC 0x00007FFEE946933A
+Exception at PC 0x00007FFEE946933A

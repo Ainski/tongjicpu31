@@ -10,10 +10,13 @@ module pcreg(
 );
 
 assign jpc =pc[31:28];
-always @(posedge pc_clk or posedge reset) begin
+always @(posedge reset) begin
     if (reset) begin
         pc <= 0;
-    end else begin
+    end
+end
+always @(negedge pc_clk) begin
+    if (!reset) begin
         pc <= mux1out;
     end
 end

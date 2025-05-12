@@ -11,7 +11,7 @@ module controller(
     output IM_R,
     output RF_W,
     output su,
-    output aluc,
+    output [3:0]aluc,
     output CS,
     output DM_W,
     output DM_R,

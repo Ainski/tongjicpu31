@@ -50,3 +50,119 @@ update_compile_order -fileset sources_1
 update_compile_order -fileset sources_1
 update_compile_order -fileset sources_1
 update_compile_order -fileset sources_1
+add_files -norecurse E:/github/cpu31/project_1/project_1.srcs/sources_1/new/cpu.v
+update_compile_order -fileset sources_1
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+source top_tb.tcl
+close_sim
+launch_simulation
+source top_tb.tcl
+close_sim
+close_project
+open_project E:/github/cpu31/project_1/project_1.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source top_tb.tcl
+close_sim
+launch_simulation
+launch_simulation
+launch_simulation
+source top_tb.tcl
+close_sim
+launch_simulation
+source top_tb.tcl
+close_sim
+launch_simulation
+source top_tb.tcl
+close_sim
+launch_simulation
+launch_simulation
+source top_tb.tcl
+close_sim
+launch_simulation
+source top_tb.tcl
+restart
+add_bp {E:/github/cpu31/project_1/project_1.srcs/sources_1/new/npcmaker.v} 11
+add_bp {E:/github/cpu31/project_1/project_1.srcs/sources_1/new/npcmaker.v} 13
+run 10 ps
+run 10 ps
+run 10 ps
+run 10 ps
+run 1000 ps
+run 1000 ps
+add_bp {E:/github/cpu31/project_1/project_1.srcs/sources_1/new/pc.v} 17
+add_bp {E:/github/cpu31/project_1/project_1.srcs/sources_1/new/pc.v} 14
+run 1000 ps
+remove_bps -file {E:/github/cpu31/project_1/project_1.srcs/sources_1/new/npcmaker.v} -line 13
+remove_bps -file {E:/github/cpu31/project_1/project_1.srcs/sources_1/new/npcmaker.v} -line 11
+run 1000 ps
+run 1000 ps
+run 1000 ps
+run all
+run 1000 ps
+run 1000 ps
+run 1000 ps
+run 1000 ps
+run 1000 ps
+run 1000 ps
+run 1000 ps
+run 1000 ps
+run 1000 ps
+run 1000 ps
+run 1000 ps
+add_bp {E:/github/cpu31/project_1/project_1.srcs/sources_1/new/npcmaker.v} 13
+run 1000 ps
+run 1000 ps
+run 1000 ps
+run 1000 ps
+restart
+run 1000 ps
+run 1000 ps
+remove_bps -file {E:/github/cpu31/project_1/project_1.srcs/sources_1/new/pc.v} -line 14
+remove_bps -file {E:/github/cpu31/project_1/project_1.srcs/sources_1/new/pc.v} -line 17
+run 1000 ps
+run 1000 ps
+run 1000 ps
+run 1000 ps
+run 1000 ps
+run 1000 ps
+run 1000 ps
+run 1000 ps
+run 1000 ps
+run 1000 ps
+run 1000 ps
+run 1000 ps
+run 1000 ps
+run 1000 ps
+run 1000 ps
+run 1000 ps
+run 1000 ps
+run 1000 ps
+run 1000 ps
+run 10 ns
+run 10 ns
+close_sim
+launch_simulation
+source top_tb.tcl
+close_sim
+launch_simulation
+launch_simulation
+source top_tb.tcl
+close_sim
+launch_simulation
+source top_tb.tcl
+update_compile_order -fileset sources_1
+close_sim
+update_compile_order -fileset sources_1
+launch_simulation
+source top_tb.tcl
+add_bp {E:/github/cpu31/project_1/project_1.srcs/sources_1/new/IMEM.v} 27
+restart
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+close_sim

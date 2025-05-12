@@ -79,13 +79,16 @@ module regfile(
     assign regfile31 = array_reg[31];
 
     integer i;  // ÉùÃ÷Ñ­»·±äÁ¿
-
-    always @(negedge RF_CLK) begin
+    always @(posedge RF_RST) begin
         if (RF_RST) begin
             for (i = 0; i < 32; i=i+1) begin
                 array_reg[i] <= 32'h0;  // ¸´Î»ËùÓÐ¼Ä´æÆ÷
             end
-        end else if (RF_W && mux3out != 6'b0) begin  // ±ÜÃâÐ´ÈëÁã¼Ä´æÆ÷
+        end
+    end
+        
+    always @(posedge RF_CLK or RF_RST) begin
+        if (RF_RST && RF_W && mux3out != 6'b0) begin  // ±ÜÃâÐ´ÈëÁã¼Ä´æÆ÷
             array_reg[mux3out] <= rdd;
         end 
     end

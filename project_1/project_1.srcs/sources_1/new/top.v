@@ -1,16 +1,16 @@
 `timescale 1ns / 1ps
-module top(
-    input clk,
+module sccomp_dataflow(
+    input clk_in,
     input reset,
     output [31:0] NPCout,
     output [31:0] a,
     output [31:0] b,
     output [31:0] DMEMdata,
     output [31:0] imdt,
-    output [31:0] index,
-    output [31:0] instr,
+    output [25:0] index,
+    output [31:0] inst,
     output [31:0] jextend,
-    output [31:0] mux3out,
+    output [4:0] mux3out,
     output [31:0] npc,
     output [31:0] pc,
     output [31:0] rd,
@@ -43,7 +43,7 @@ module top(
     output negative,
     output overflow,
     output RF_CLK,
-    output RF_R,
+
     output RF_W,
     output su,
     output zero,
@@ -53,20 +53,22 @@ module top(
     regfile16,regfile17,regfile18,regfile19,regfile20,regfile21,regfile22,regfile23,
     regfile24,regfile25,regfile26,regfile27,regfile28,regfile29,regfile30,regfile31
 );
-
+wire [31:0]pc_temp;
+assign pc=pc_temp+32'h00400000;
+assign RF_CLK = clk_in;
 cpu sccpu(
-        .clk(clk),
+        .clk(clk_in),
         .NPCout(NPCout),
         .a(a),
         .b(b),
         .DMEMdata(DMEMdata),
         .imdt(imdt),
         .index(index),
-        .instr(instr),
+        .instr(inst),
         .jextend(jextend),
         .mux3out(mux3out),
         .npc(npc),
-        .pc(pc),
+        .pc(pc_temp),
         .rd(rd),
         .rdd(rdd),
         .r(r),
@@ -97,7 +99,6 @@ cpu sccpu(
         .negative(negative),
         .overflow(overflow),
         .RF_CLK(RF_CLK),
-        .RF_R(RF_R),
         .RF_W(RF_W),
         .reset(reset),
         .su(su),
@@ -142,15 +143,15 @@ DMEM dmem_inst(
     .DM_W(DM_W),
     .DMEMaddr(r),
     .DMEMdata(DMEMdata),
-    .clk(clk),
+    .clk(clk_in),
     .rt(rt)
 );
 IMEM imem_inst(
     .IM_R(IM_R),
-    .address(pc),
+    .address(pc_temp),
     .func(func),
     .index(index),
-    .instr(instr),
+    .instr(inst),
     .imdtT(imdtT),
     .op(op),
     .rdc(rdc),

@@ -32,6 +32,9 @@ INFO: [VRFC 10-2263] Analyzing Verilog file "E:/github/cpu31/project_1/project_1
 INFO: [VRFC 10-311] analyzing module IMEM
 INFO: [VRFC 10-2263] Analyzing Verilog file "E:/github/cpu31/project_1/project_1.srcs/sources_1/new/cpu.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module cpu
-ERROR: [VRFC 10-2068] ansi port instr cannot be redeclared in the header [E:/github/cpu31/project_1/project_1.srcs/sources_1/new/cpu.v:19]
-INFO: [VRFC 10-2458] undeclared symbol mux1out, assumed default net type wire [E:/github/cpu31/project_1/project_1.srcs/sources_1/new/cpu.v:128]
-ERROR: [VRFC 10-1040] module cpu ignored due to previous errors [E:/github/cpu31/project_1/project_1.srcs/sources_1/new/cpu.v:2]
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/github/cpu31/project_1/project_1.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sccomp_dataflow
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/github/cpu31/project_1/project_1.srcs/sim_1/new/top_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module _246tb_ex9_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/github/cpu31/project_1/project_1.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

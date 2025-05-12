@@ -6,11 +6,9 @@ module mux5(
     input wire [1:0] M5,
     output wire [31:0] a
 );
-
-    assign a=
-    (!M5[1]&!M5[0]&rs)|
-    (!M5[1]&M5[0]&imdt)|
-    (M5[1]&!M5[0]&32'b0)|
-    (M5[1]&M5[0]&rt);
-
+    assign a = 
+        (M5 == 2'b00)? rs :
+        (M5 == 2'b01)? imdt :
+        (M5 == 2'b10)? 32'b0 :
+        rt;
 endmodule

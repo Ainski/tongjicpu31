@@ -24,7 +24,7 @@ module IMEM(
 
     reg [31:0] IMEM [0:2047];
     initial begin
-        $readmemb("_1_addi.txt", IMEM);
+        $readmemb("E:/github/cpu31/test_datas/_1_addi.txt", IMEM);
         // $readmemb("_1_addiu.txt", IMEM);
         // $readmemb("_1_lui.txt", IMEM);
         // $readmemb("_2_add.txt", IMEM);
@@ -57,6 +57,6 @@ module IMEM(
         // $readmemb("_4_jr.txt", IMEM);
 
     end
-    assign instr=IMEM[address[12:2]] & IM_R;
+    assign instr=IM_R? IMEM[address[12:2]] : 32'h0;
 
 endmodule

@@ -1,0 +1,7 @@
+Running: xsim.dir/_246tb_ex9_tb_behav/xsimk.exe -simmode gui -wdb _246tb_ex9_tb_behav.wdb -simrunnum 0 -socket 58972
+Design successfully loaded
+Design Loading Memory Usage: 14224 KB (Peak: 14224 KB)
+Design Loading CPU Usage: 171 ms
+Simulation completed
+Simulation Memory Usage: 15472 KB (Peak: 15472 KB)
+Simulation CPU Usage: 437 ms
