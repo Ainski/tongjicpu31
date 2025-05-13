@@ -163,12 +163,12 @@ initial begin
 	end
     reg [31:0]count;
 	always begin		
-	if(count==200)begin
+	if(count==1200)begin
            $finish;
 	end
 	#50;	
 	clk_in = ~clk_in;
-	if(clk_in == 1'b0) begin	
+	if(clk_in == 1'b1) begin	
 	        count=count+1;
 			$fdisplay(file_output, "pc: %h", pc);	
 			$fdisplay(file_output, "instr: %h", inst);
