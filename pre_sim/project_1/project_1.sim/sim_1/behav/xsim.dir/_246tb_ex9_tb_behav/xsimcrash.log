@@ -1,0 +1,44 @@
+Unable to capture context for thread 36676 in process 50016, can not generate back trace
+Unable to capture context for thread 50988 in process 50016, can not generate back trace
+Unable to capture context for thread 40596 in process 50016, can not generate back trace
+Unable to capture context for thread 42196 in process 50016, can not generate back trace
+Unable to capture context for thread 51164 in process 50016, can not generate back trace
+Unable to capture context for thread 35784 in process 50016, can not generate back trace
+Exception at PC 0x00007FF96054BB93
+Printing stacktrace...
+
+Unable to capture context for thread 36676 in process 50016, can not generate back trace
+Unable to capture context for thread 50988 in process 50016, can not generate back trace
+Unable to capture context for thread 42196 in process 50016, can not generate back trace
+Exception at PC 0x00007FFA2B529F0A
+Exception at PC 0x00007FFA2B529F0A
+Exception at PC 0x00007FFA2B529F0A
+[0]  [0x00007FF96054BB93]
+[1]  [0x00007FF96054BB93]
+[2]  [0x00007FF96054B4A1]
+[3]  [0x00007FF96054B459]
+[4]  [0x00007FF9605319FE]
+[5]  [0x00007FF960530ED1]
+[6]  [0x00007FF960530D76]
+[7]  [0x00007FF9604D79F6]
+[8]  [0x00007FF9604C7AFB]
+[9]  [0x00007FF9605EE90A]
+[10]  [0x00007FF960609F87]
+[11]  [0x00007FF96060A05F]
+[12] (BaseThreadInitThunk+0x17) [0x00007FFA2C67E8D7]
+[13] (RtlUserThreadStart+0x2c) [0x00007FFA2DE9C5DC]
+Done
+Exception at PC 0x00007FFA2B529F0A
+Exception at PC 0x00007FFA2B529F0A
+Exception at PC 0x00007FFA2B529F0A
+Exception at PC 0x00007FFA2B529F0A
+Exception at PC 0x00007FFA2B529F0A
+Exception at PC 0x00007FFA2B529F0A
+Exception at PC 0x00007FFA2B529F0A
+Exception at PC 0x00007FFA2B529F0A
+Exception at PC 0x00007FFA2B529F0A
+Exception at PC 0x00007FFA2B529F0A
+Exception at PC 0x00007FFA2B529F0A
+Exception at PC 0x00007FFA2B529F0A
+Exception at PC 0x00007FFA2B529F0A
+Exception at PC 0x00007FFA2B529F0A

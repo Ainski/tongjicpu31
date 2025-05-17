@@ -2,7 +2,7 @@
 module IMEM(
     input [31:0] address,
     input IM_R,//read a intruction
-    output [31:0] instr,
+    output reg [31:0] instr,
     output [5:0] op,
     output [4:0] rsc,
     output [4:0] rtc,
@@ -22,7 +22,9 @@ module IMEM(
     assign imdtT=instr[15:0];
     assign index=instr[25:0];
     wire [31:0]instrT;
-    assign instr=IM_R?instrT : 32'h0;
+    always @(*) begin
+        instr=IM_R?instrT : 32'h0;
+    end
     imem imem_ip(
         .a(address[12:2]),
         .spo(instrT)

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Fri May 16 05:23:33 2025
+# Process ID: 26760
+# Current directory: E:/github/cpu31/post_sim/project_1/project_1.sim/sim_1/behav
+# Command line: wbtcv.exe -mode batch -source E:/github/cpu31/post_sim/project_1/project_1.sim/sim_1/behav/xsim.dir/_246tb_ex9_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: E:/github/cpu31/post_sim/project_1/project_1.sim/sim_1/behav/webtalk.log
+# Journal file: E:/github/cpu31/post_sim/project_1/project_1.sim/sim_1/behav\webtalk.jou
+#-----------------------------------------------------------
+source E:/github/cpu31/post_sim/project_1/project_1.sim/sim_1/behav/xsim.dir/_246tb_ex9_tb_behav/webtalk/xsim_webtalk.tcl -notrace

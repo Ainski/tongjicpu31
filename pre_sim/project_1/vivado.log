@@ -1,0 +1,1326 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Fri May 16 04:50:28 2025
+# Process ID: 38804
+# Current directory: E:/github/cpu31/post_sim/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent24880 E:\github\cpu31\post_sim\project_1\project_1.xpr
+# Log file: E:/github/cpu31/post_sim/project_1/vivado.log
+# Journal file: E:/github/cpu31/post_sim/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/github/cpu31/post_sim/project_1/project_1.xpr
+CRITICAL WARNING: [Project 1-19] Could not find the file 'E:/github/cpu31/post_sim/test_datas/mips_31_mars_simulate.coe'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/2016.2/data/ip'.
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/github/cpu31/post_sim/project_1/project_1.srcs/sources_1/new/ALU.v" into library work [E:/github/cpu31/post_sim/project_1/project_1.srcs/sources_1/new/ALU.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/github/cpu31/post_sim/project_1/project_1.srcs/sources_1/new/DMEM.v" into library work [E:/github/cpu31/post_sim/project_1/project_1.srcs/sources_1/new/DMEM.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/github/cpu31/post_sim/project_1/project_1.srcs/sources_1/new/IMEM.v" into library work [E:/github/cpu31/post_sim/project_1/project_1.srcs/sources_1/new/IMEM.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/github/cpu31/post_sim/project_1/project_1.srcs/sources_1/new/Jextend.v" into library work [E:/github/cpu31/post_sim/project_1/project_1.srcs/sources_1/new/Jextend.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/github/cpu31/post_sim/project_1/project_1.srcs/sources_1/new/controller.v" into library work [E:/github/cpu31/post_sim/project_1/project_1.srcs/sources_1/new/controller.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/github/cpu31/post_sim/project_1/project_1.srcs/sources_1/new/cpu.v" into library work [E:/github/cpu31/post_sim/project_1/project_1.srcs/sources_1/new/cpu.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/github/cpu31/post_sim/project_1/project_1.srcs/sources_1/new/gate.v" into library work [E:/github/cpu31/post_sim/project_1/project_1.srcs/sources_1/new/gate.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/github/cpu31/post_sim/project_1/project_1.srcs/sources_1/new/imdt_ext.v" into library work [E:/github/cpu31/post_sim/project_1/project_1.srcs/sources_1/new/imdt_ext.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/github/cpu31/post_sim/project_1/project_1.srcs/sources_1/new/mux1.v" into library work [E:/github/cpu31/post_sim/project_1/project_1.srcs/sources_1/new/mux1.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/github/cpu31/post_sim/project_1/project_1.srcs/sources_1/new/mux2.v" into library work [E:/github/cpu31/post_sim/project_1/project_1.srcs/sources_1/new/mux2.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/github/cpu31/post_sim/project_1/project_1.srcs/sources_1/new/mux3.v" into library work [E:/github/cpu31/post_sim/project_1/project_1.srcs/sources_1/new/mux3.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/github/cpu31/post_sim/project_1/project_1.srcs/sources_1/new/mux4.v" into library work [E:/github/cpu31/post_sim/project_1/project_1.srcs/sources_1/new/mux4.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/github/cpu31/post_sim/project_1/project_1.srcs/sources_1/new/mux5.v" into library work [E:/github/cpu31/post_sim/project_1/project_1.srcs/sources_1/new/mux5.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/github/cpu31/post_sim/project_1/project_1.srcs/sources_1/new/mux6.v" into library work [E:/github/cpu31/post_sim/project_1/project_1.srcs/sources_1/new/mux6.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/github/cpu31/post_sim/project_1/project_1.srcs/sources_1/new/npcmaker.v" into library work [E:/github/cpu31/post_sim/project_1/project_1.srcs/sources_1/new/npcmaker.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/github/cpu31/post_sim/project_1/project_1.srcs/sources_1/new/pc.v" into library work [E:/github/cpu31/post_sim/project_1/project_1.srcs/sources_1/new/pc.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/github/cpu31/post_sim/project_1/project_1.srcs/sources_1/new/regfile.v" into library work [E:/github/cpu31/post_sim/project_1/project_1.srcs/sources_1/new/regfile.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/github/cpu31/post_sim/project_1/project_1.srcs/sources_1/new/shamt_ext.v" into library work [E:/github/cpu31/post_sim/project_1/project_1.srcs/sources_1/new/shamt_ext.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/github/cpu31/post_sim/project_1/project_1.srcs/sources_1/new/top.v" into library work [E:/github/cpu31/post_sim/project_1/project_1.srcs/sources_1/new/top.v:1]
+[Fri May 16 04:51:33 2025] Launched synth_1...
+Run output will be captured here: E:/github/cpu31/post_sim/project_1/project_1.runs/synth_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a100tcsg324-1
+INFO: [Project 1-454] Reading design checkpoint 'e:/github/cpu31/post_sim/project_1/project_1.srcs/sources_1/ip/imem/imem.dcp' for cell 'imem_inst/imem_ip'
+INFO: [Netlist 29-17] Analyzing 329 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.2
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [E:/github/cpu31/post_sim/project_1/project_1.srcs/constrs_1/new/cpu31.xdc]
+Finished Parsing XDC File [E:/github/cpu31/post_sim/project_1/project_1.srcs/constrs_1/new/cpu31.xdc]
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'e:/github/cpu31/post_sim/project_1/project_1.srcs/sources_1/ip/imem/imem.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'e:/github/cpu31/post_sim/project_1/project_1.srcs/sources_1/ip/imem/imem.dcp'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 256 instances were transformed.
+  RAM256X1S => RAM256X1S (MUXF7, MUXF7, MUXF8, RAMS64E, RAMS64E, RAMS64E, RAMS64E): 256 instances
+
+open_run: Time (s): cpu = 00:00:12 ; elapsed = 00:00:11 . Memory (MB): peak = 1282.961 ; gain = 346.656
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -name timing_1
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -name timing_2
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -name timing_2
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -name timing_2
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+save_constraints
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/github/cpu31/post_sim/project_1/project_1.srcs/sources_1/new/npcmaker.v" into library work [E:/github/cpu31/post_sim/project_1/project_1.srcs/sources_1/new/npcmaker.v:1]
+[Fri May 16 05:07:59 2025] Launched synth_1...
+Run output will be captured here: E:/github/cpu31/post_sim/project_1/project_1.runs/synth_1/runme.log
+close_design
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a100tcsg324-1
+INFO: [Project 1-454] Reading design checkpoint 'e:/github/cpu31/post_sim/project_1/project_1.srcs/sources_1/ip/imem/imem.dcp' for cell 'imem_inst/imem_ip'
+INFO: [Netlist 29-17] Analyzing 329 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [E:/github/cpu31/post_sim/project_1/project_1.srcs/constrs_1/new/cpu31.xdc]
+Finished Parsing XDC File [E:/github/cpu31/post_sim/project_1/project_1.srcs/constrs_1/new/cpu31.xdc]
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'e:/github/cpu31/post_sim/project_1/project_1.srcs/sources_1/ip/imem/imem.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'e:/github/cpu31/post_sim/project_1/project_1.srcs/sources_1/ip/imem/imem.dcp'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 256 instances were transformed.
+  RAM256X1S => RAM256X1S (MUXF7, MUXF7, MUXF8, RAMS64E, RAMS64E, RAMS64E, RAMS64E): 256 instances
+
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -name timing_1
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+ERROR: [Vivado 12-106] *** Exception: java.lang.IllegalStateException: cannot open system clipboard (See E:/github/cpu31/post_sim/project_1/vivado_pid38804.debug)
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/github/cpu31/post_sim/project_1/project_1.srcs/sources_1/new/npcmaker.v" into library work [E:/github/cpu31/post_sim/project_1/project_1.srcs/sources_1/new/npcmaker.v:1]
+[Fri May 16 05:12:02 2025] Launched synth_1...
+Run output will be captured here: E:/github/cpu31/post_sim/project_1/project_1.runs/synth_1/runme.log
+close_design
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a100tcsg324-1
+INFO: [Project 1-454] Reading design checkpoint 'e:/github/cpu31/post_sim/project_1/project_1.srcs/sources_1/ip/imem/imem.dcp' for cell 'imem_inst/imem_ip'
+INFO: [Netlist 29-17] Analyzing 329 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [E:/github/cpu31/post_sim/project_1/project_1.srcs/constrs_1/new/cpu31.xdc]
+Finished Parsing XDC File [E:/github/cpu31/post_sim/project_1/project_1.srcs/constrs_1/new/cpu31.xdc]
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'e:/github/cpu31/post_sim/project_1/project_1.srcs/sources_1/ip/imem/imem.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'e:/github/cpu31/post_sim/project_1/project_1.srcs/sources_1/ip/imem/imem.dcp'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 256 instances were transformed.
+  RAM256X1S => RAM256X1S (MUXF7, MUXF7, MUXF8, RAMS64E, RAMS64E, RAMS64E, RAMS64E): 256 instances
+
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -name timing_1
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+launch_simulation -mode post-synthesis -type timing
+INFO: [USF-ModelSim-47] Finding simulator installation...
+INFO: [USF-ModelSim-49] Using simulator executables from 'D:\modelism\win32pe'
+INFO: [USF-ModelSim-30] Simulation object is 'sim_1'...
+INFO: [USF-ModelSim-29] Writing simulation netlist file for design 'synth_1'...
+INFO: [USF-ModelSim-101] write_verilog -mode timesim -nolib -sdf_anno true -force -file "E:/github/cpu31/post_sim/project_1/project_1.sim/sim_1/synth/timing/_246tb_ex9_tb_time_synth.v"
+INFO: [USF-ModelSim-30] Writing SDF file...
+INFO: [USF-ModelSim-102] write_sdf -mode timesim -process_corner slow -force -file "E:/github/cpu31/post_sim/project_1/project_1.sim/sim_1/synth/timing/_246tb_ex9_tb_time_synth.sdf"
+INFO: [USF-ModelSim-34] Netlist generated:E:/github/cpu31/post_sim/project_1/project_1.sim/sim_1/synth/timing/_246tb_ex9_tb_time_synth.v
+INFO: [USF-ModelSim-35] SDF generated:E:/github/cpu31/post_sim/project_1/project_1.sim/sim_1/synth/timing/_246tb_ex9_tb_time_synth.sdf
+INFO: [USF-modelsim-7] Finding pre-compiled libraries...
+CRITICAL WARNING: [USF-modelsim-8] Failed to find the pre-compiled simulation library!
+INFO: [USF-modelsim-9]  Recommendation:- Please follow these instructions to resolve this issue:-
+ - set the 'COMPXLIB.MODELSIM_COMPILED_LIBRARY_DIR' project property to the directory where Xilinx simulation libraries are compiled for ModelSim/QuestaSim, or
+ - set the 'MODELSIM' environment variable to point to the modelsim.ini file, or
+ - set the 'WD_MGC' environment variable to point to the directory containing the modelsim.ini file
+INFO: [USF-ModelSim-40] Inspecting design source files for '_246tb_ex9_tb' in fileset 'sim_1'...
+INFO: [USF-ModelSim-25] Exported 'E:/github/cpu31/post_sim/project_1/project_1.sim/sim_1/synth/timing/imem.mif'
+INFO: [USF-ModelSim-25] Exported 'E:/github/cpu31/post_sim/project_1/project_1.sim/sim_1/synth/timing/mips_31_mars_simulate.coe'
+INFO: [USF-ModelSim-25] Exported 'E:/github/cpu31/post_sim/project_1/project_1.sim/sim_1/synth/timing/mips_31_mars_simulate.coe'
+INFO: [USF-ModelSim-2] ModelSim::Compile design
+INFO: [USF-ModelSim-15] Creating automatic 'do' files...
+INFO: [USF-ModelSim-69] Executing 'COMPILE and ANALYZE' step in 'E:/github/cpu31/post_sim/project_1/project_1.sim/sim_1/synth/timing'
+Reading D:/modelism/tcl/vsim/pref.tcl
+
+# 10.4c
+
+# do {_246tb_ex9_tb_compile.do}
+# Model Technology ModelSim PE vmap 10.4c Lib Mapping Utility 2015.07 Jul 20 2015
+# vmap xil_defaultlib msim/xil_defaultlib 
+# Copying D:/modelism/win32pe/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+# 
+# Model Technology ModelSim PE vlog 10.4c Compiler 2015.07 Jul 20 2015
+# Start time: 05:21:08 on May 16,2025
+# vlog -64 -incr -work xil_defaultlib _246tb_ex9_tb_time_synth.v ../../../../project_1.srcs/sim_1/new/top_tb.v 
+# -- Compiling module RAM256X1S_UNIQ_BASE_
+# -- Compiling module RAM256X1S_HD526
+# -- Compiling module RAM256X1S_HD527
+# -- Compiling module RAM256X1S_HD528
+# -- Compiling module RAM256X1S_HD529
+# -- Compiling module RAM256X1S_HD530
+# -- Compiling module RAM256X1S_HD531
+# -- Compiling module RAM256X1S_HD532
+# -- Compiling module RAM256X1S_HD533
+# -- Compiling module RAM256X1S_HD534
+# -- Compiling module RAM256X1S_HD535
+# -- Compiling module RAM256X1S_HD536
+# -- Compiling module RAM256X1S_HD537
+# -- Compiling module RAM256X1S_HD538
+# -- Compiling module RAM256X1S_HD539
+# -- Compiling module RAM256X1S_HD540
+# -- Compiling module RAM256X1S_HD541
+# -- Compiling module RAM256X1S_HD542
+# -- Compiling module RAM256X1S_HD543
+# -- Compiling module RAM256X1S_HD544
+# -- Compiling module RAM256X1S_HD545
+# -- Compiling module RAM256X1S_HD546
+# -- Compiling module RAM256X1S_HD547
+# -- Compiling module RAM256X1S_HD548
+# -- Compiling module RAM256X1S_HD549
+# -- Compiling module RAM256X1S_HD550
+# -- Compiling module RAM256X1S_HD551
+# -- Compiling module RAM256X1S_HD552
+# -- Compiling module RAM256X1S_HD553
+# -- Compiling module RAM256X1S_HD554
+# -- Compiling module RAM256X1S_HD555
+# -- Compiling module RAM256X1S_HD556
+# -- Compiling module RAM256X1S_HD557
+# -- Compiling module RAM256X1S_HD558
+# -- Compiling module RAM256X1S_HD559
+# -- Compiling module RAM256X1S_HD560
+# -- Compiling module RAM256X1S_HD561
+# -- Compiling module RAM256X1S_HD562
+# -- Compiling module RAM256X1S_HD563
+# -- Compiling module RAM256X1S_HD564
+# -- Compiling module RAM256X1S_HD565
+# -- Compiling module RAM256X1S_HD566
+# -- Compiling module RAM256X1S_HD567
+# -- Compiling module RAM256X1S_HD568
+# -- Compiling module RAM256X1S_HD569
+# -- Compiling module RAM256X1S_HD570
+# -- Compiling module RAM256X1S_HD571
+# -- Compiling module RAM256X1S_HD572
+# -- Compiling module RAM256X1S_HD573
+# -- Compiling module RAM256X1S_HD574
+# -- Compiling module RAM256X1S_HD575
+# -- Compiling module RAM256X1S_HD576
+# -- Compiling module RAM256X1S_HD577
+# -- Compiling module RAM256X1S_HD578
+# -- Compiling module RAM256X1S_HD579
+# -- Compiling module RAM256X1S_HD580
+# -- Compiling module RAM256X1S_HD581
+# -- Compiling module RAM256X1S_HD582
+# -- Compiling module RAM256X1S_HD583
+# -- Compiling module RAM256X1S_HD584
+# -- Compiling module RAM256X1S_HD585
+# -- Compiling module RAM256X1S_HD586
+# -- Compiling module RAM256X1S_HD587
+# -- Compiling module RAM256X1S_HD588
+# -- Compiling module RAM256X1S_HD589
+# -- Compiling module RAM256X1S_HD590
+# -- Compiling module RAM256X1S_HD591
+# -- Compiling module RAM256X1S_HD592
+# -- Compiling module RAM256X1S_HD593
+# -- Compiling module RAM256X1S_HD594
+# -- Compiling module RAM256X1S_HD595
+# -- Compiling module RAM256X1S_HD596
+# -- Compiling module RAM256X1S_HD597
+# -- Compiling module RAM256X1S_HD598
+# -- Compiling module RAM256X1S_HD599
+# -- Compiling module RAM256X1S_HD600
+# -- Compiling module RAM256X1S_HD601
+# -- Compiling module RAM256X1S_HD602
+# -- Compiling module RAM256X1S_HD603
+# -- Compiling module RAM256X1S_HD604
+# -- Compiling module RAM256X1S_HD605
+# -- Compiling module RAM256X1S_HD606
+# -- Compiling module RAM256X1S_HD607
+# -- Compiling module RAM256X1S_HD608
+# -- Compiling module RAM256X1S_HD609
+# -- Compiling module RAM256X1S_HD610
+# -- Compiling module RAM256X1S_HD611
+# -- Compiling module RAM256X1S_HD612
+# -- Compiling module RAM256X1S_HD613
+# -- Compiling module RAM256X1S_HD614
+# -- Compiling module RAM256X1S_HD615
+# -- Compiling module RAM256X1S_HD616
+# -- Compiling module RAM256X1S_HD617
+# -- Compiling module RAM256X1S_HD618
+# -- Compiling module RAM256X1S_HD619
+# -- Compiling module RAM256X1S_HD620
+# -- Compiling module RAM256X1S_HD621
+# -- Compiling module RAM256X1S_HD622
+# -- Compiling module RAM256X1S_HD623
+# -- Compiling module RAM256X1S_HD624
+# -- Compiling module RAM256X1S_HD625
+# -- Compiling module RAM256X1S_HD626
+# -- Compiling module RAM256X1S_HD627
+# -- Compiling module RAM256X1S_HD628
+# -- Compiling module RAM256X1S_HD629
+# -- Compiling module RAM256X1S_HD630
+# -- Compiling module RAM256X1S_HD631
+# -- Compiling module RAM256X1S_HD632
+# -- Compiling module RAM256X1S_HD633
+# -- Compiling module RAM256X1S_HD634
+# -- Compiling module RAM256X1S_HD635
+# -- Compiling module RAM256X1S_HD636
+# -- Compiling module RAM256X1S_HD637
+# -- Compiling module RAM256X1S_HD638
+# -- Compiling module RAM256X1S_HD639
+# -- Compiling module RAM256X1S_HD640
+# -- Compiling module RAM256X1S_HD641
+# -- Compiling module RAM256X1S_HD642
+# -- Compiling module RAM256X1S_HD643
+# -- Compiling module RAM256X1S_HD644
+# -- Compiling module RAM256X1S_HD645
+# -- Compiling module RAM256X1S_HD646
+# -- Compiling module RAM256X1S_HD647
+# -- Compiling module RAM256X1S_HD648
+# -- Compiling module RAM256X1S_HD649
+# -- Compiling module RAM256X1S_HD650
+# -- Compiling module RAM256X1S_HD651
+# -- Compiling module RAM256X1S_HD652
+# -- Compiling module RAM256X1S_HD653
+# -- Compiling module RAM256X1S_HD654
+# -- Compiling module RAM256X1S_HD655
+# -- Compiling module RAM256X1S_HD656
+# -- Compiling module RAM256X1S_HD657
+# -- Compiling module RAM256X1S_HD658
+# -- Compiling module RAM256X1S_HD659
+# -- Compiling module RAM256X1S_HD660
+# -- Compiling module RAM256X1S_HD661
+# -- Compiling module RAM256X1S_HD662
+# -- Compiling module RAM256X1S_HD663
+# -- Compiling module RAM256X1S_HD664
+# -- Compiling module RAM256X1S_HD665
+# -- Compiling module RAM256X1S_HD666
+# -- Compiling module RAM256X1S_HD667
+# -- Compiling module RAM256X1S_HD668
+# -- Compiling module RAM256X1S_HD669
+# -- Compiling module RAM256X1S_HD670
+# -- Compiling module RAM256X1S_HD671
+# -- Compiling module RAM256X1S_HD672
+# -- Compiling module RAM256X1S_HD673
+# -- Compiling module RAM256X1S_HD674
+# -- Compiling module RAM256X1S_HD675
+# -- Compiling module RAM256X1S_HD676
+# -- Compiling module RAM256X1S_HD677
+# -- Compiling module RAM256X1S_HD678
+# -- Compiling module RAM256X1S_HD679
+# -- Compiling module RAM256X1S_HD680
+# -- Compiling module RAM256X1S_HD681
+# -- Compiling module RAM256X1S_HD682
+# -- Compiling module RAM256X1S_HD683
+# -- Compiling module RAM256X1S_HD684
+# -- Compiling module RAM256X1S_HD685
+# -- Compiling module RAM256X1S_HD686
+# -- Compiling module RAM256X1S_HD687
+# -- Compiling module RAM256X1S_HD688
+# -- Compiling module RAM256X1S_HD689
+# -- Compiling module RAM256X1S_HD690
+# -- Compiling module RAM256X1S_HD691
+# -- Compiling module RAM256X1S_HD692
+# -- Compiling module RAM256X1S_HD693
+# -- Compiling module RAM256X1S_HD694
+# -- Compiling module RAM256X1S_HD695
+# -- Compiling module RAM256X1S_HD696
+# -- Compiling module RAM256X1S_HD697
+# -- Compiling module RAM256X1S_HD698
+# -- Compiling module RAM256X1S_HD699
+# -- Compiling module RAM256X1S_HD700
+# -- Compiling module RAM256X1S_HD701
+# -- Compiling module RAM256X1S_HD702
+# -- Compiling module RAM256X1S_HD703
+# -- Compiling module RAM256X1S_HD704
+# -- Compiling module RAM256X1S_HD705
+# -- Compiling module RAM256X1S_HD706
+# -- Compiling module RAM256X1S_HD707
+# -- Compiling module RAM256X1S_HD708
+# -- Compiling module RAM256X1S_HD709
+# -- Compiling module RAM256X1S_HD710
+# -- Compiling module RAM256X1S_HD711
+# -- Compiling module RAM256X1S_HD712
+# -- Compiling module RAM256X1S_HD713
+# -- Compiling module RAM256X1S_HD714
+# -- Compiling module RAM256X1S_HD715
+# -- Compiling module RAM256X1S_HD716
+# -- Compiling module RAM256X1S_HD717
+# -- Compiling module RAM256X1S_HD718
+# -- Compiling module RAM256X1S_HD719
+# -- Compiling module RAM256X1S_HD720
+# -- Compiling module RAM256X1S_HD721
+# -- Compiling module RAM256X1S_HD722
+# -- Compiling module RAM256X1S_HD723
+# -- Compiling module RAM256X1S_HD724
+# -- Compiling module RAM256X1S_HD725
+# -- Compiling module RAM256X1S_HD726
+# -- Compiling module RAM256X1S_HD727
+# -- Compiling module RAM256X1S_HD728
+# -- Compiling module RAM256X1S_HD729
+# -- Compiling module RAM256X1S_HD730
+# -- Compiling module RAM256X1S_HD731
+# -- Compiling module RAM256X1S_HD732
+# -- Compiling module RAM256X1S_HD733
+# -- Compiling module RAM256X1S_HD734
+# -- Compiling module RAM256X1S_HD735
+# -- Compiling module RAM256X1S_HD736
+# -- Compiling module RAM256X1S_HD737
+# -- Compiling module RAM256X1S_HD738
+# -- Compiling module RAM256X1S_HD739
+# -- Compiling module RAM256X1S_HD740
+# -- Compiling module RAM256X1S_HD741
+# -- Compiling module RAM256X1S_HD742
+# -- Compiling module RAM256X1S_HD743
+# -- Compiling module RAM256X1S_HD744
+# -- Compiling module RAM256X1S_HD745
+# -- Compiling module RAM256X1S_HD746
+# -- Compiling module RAM256X1S_HD747
+# -- Compiling module RAM256X1S_HD748
+# -- Compiling module RAM256X1S_HD749
+# -- Compiling module RAM256X1S_HD750
+# -- Compiling module RAM256X1S_HD751
+# -- Compiling module RAM256X1S_HD752
+# -- Compiling module RAM256X1S_HD753
+# -- Compiling module RAM256X1S_HD754
+# -- Compiling module RAM256X1S_HD755
+# -- Compiling module RAM256X1S_HD756
+# -- Compiling module RAM256X1S_HD757
+# -- Compiling module RAM256X1S_HD758
+# -- Compiling module RAM256X1S_HD759
+# -- Compiling module RAM256X1S_HD760
+# -- Compiling module RAM256X1S_HD761
+# -- Compiling module RAM256X1S_HD762
+# -- Compiling module RAM256X1S_HD763
+# -- Compiling module RAM256X1S_HD764
+# -- Compiling module RAM256X1S_HD765
+# -- Compiling module RAM256X1S_HD766
+# -- Compiling module RAM256X1S_HD767
+# -- Compiling module RAM256X1S_HD768
+# -- Compiling module RAM256X1S_HD769
+# -- Compiling module RAM256X1S_HD770
+# -- Compiling module RAM256X1S_HD771
+# -- Compiling module RAM256X1S_HD772
+# -- Compiling module RAM256X1S_HD773
+# -- Compiling module RAM256X1S_HD774
+# -- Compiling module RAM256X1S_HD775
+# -- Compiling module RAM256X1S_HD776
+# -- Compiling module RAM256X1S_HD777
+# -- Compiling module RAM256X1S_HD778
+# -- Compiling module RAM256X1S_HD779
+# -- Compiling module RAM256X1S_HD780
+# -- Compiling module imem
+# -- Compiling module DMEM
+# -- Compiling module IMEM
+# -- Compiling module IMEM_0
+# -- Compiling module cpu
+# -- Compiling module imem_HD522
+# -- Compiling module mux1
+# -- Compiling module mux2
+# -- Compiling module npcmaker
+# -- Compiling module pcreg
+# -- Compiling module regfile
+# -- Compiling module sccomp_dataflow
+# -- Compiling module imem_dist_mem_gen_v8_0_10
+# -- Compiling module imem_dist_mem_gen_v8_0_10_HD523
+# -- Compiling module imem_dist_mem_gen_v8_0_10_synth
+# -- Compiling module imem_dist_mem_gen_v8_0_10_synth_HD524
+# -- Compiling module imem_rom
+# -- Compiling module imem_rom_HD525
+# -- Compiling module glbl
+# -- Compiling module _246tb_ex9_tb
+# 
+# Top level modules:
+# 	glbl
+# 	_246tb_ex9_tb
+# End time: 05:21:10 on May 16,2025, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 1
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 1980.539 ; gain = 0.000
+INFO: [USF-ModelSim-69] 'compile' step finished in '8' seconds
+INFO: [USF-ModelSim-4] ModelSim::Simulate design
+INFO: [USF-ModelSim-69] Executing 'SIMULATE' step in 'E:/github/cpu31/post_sim/project_1/project_1.sim/sim_1/synth/timing'
+Program launched (PID=31096)
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:12 . Memory (MB): peak = 1980.539 ; gain = 0.203
+launch_simulation -mode post-synthesis -type timing
+INFO: [USF-ModelSim-47] Finding simulator installation...
+INFO: [USF-ModelSim-49] Using simulator executables from 'D:\modelism\win32pe'
+INFO: [USF-ModelSim-30] Simulation object is 'sim_1'...
+INFO: [USF-ModelSim-29] Writing simulation netlist file for design 'synth_1'...
+INFO: [USF-ModelSim-101] write_verilog -mode timesim -nolib -sdf_anno true -force -file "E:/github/cpu31/post_sim/project_1/project_1.sim/sim_1/synth/timing/_246tb_ex9_tb_time_synth.v"
+INFO: [USF-ModelSim-30] Writing SDF file...
+INFO: [USF-ModelSim-102] write_sdf -mode timesim -process_corner slow -force -file "E:/github/cpu31/post_sim/project_1/project_1.sim/sim_1/synth/timing/_246tb_ex9_tb_time_synth.sdf"
+INFO: [USF-ModelSim-34] Netlist generated:E:/github/cpu31/post_sim/project_1/project_1.sim/sim_1/synth/timing/_246tb_ex9_tb_time_synth.v
+INFO: [USF-ModelSim-35] SDF generated:E:/github/cpu31/post_sim/project_1/project_1.sim/sim_1/synth/timing/_246tb_ex9_tb_time_synth.sdf
+INFO: [USF-modelsim-7] Finding pre-compiled libraries...
+CRITICAL WARNING: [USF-modelsim-8] Failed to find the pre-compiled simulation library!
+INFO: [USF-modelsim-9]  Recommendation:- Please follow these instructions to resolve this issue:-
+ - set the 'COMPXLIB.MODELSIM_COMPILED_LIBRARY_DIR' project property to the directory where Xilinx simulation libraries are compiled for ModelSim/QuestaSim, or
+ - set the 'MODELSIM' environment variable to point to the modelsim.ini file, or
+ - set the 'WD_MGC' environment variable to point to the directory containing the modelsim.ini file
+INFO: [USF-ModelSim-40] Inspecting design source files for '_246tb_ex9_tb' in fileset 'sim_1'...
+INFO: [USF-ModelSim-25] Exported 'E:/github/cpu31/post_sim/project_1/project_1.sim/sim_1/synth/timing/imem.mif'
+INFO: [USF-ModelSim-25] Exported 'E:/github/cpu31/post_sim/project_1/project_1.sim/sim_1/synth/timing/mips_31_mars_simulate.coe'
+INFO: [USF-ModelSim-25] Exported 'E:/github/cpu31/post_sim/project_1/project_1.sim/sim_1/synth/timing/mips_31_mars_simulate.coe'
+INFO: [USF-ModelSim-2] ModelSim::Compile design
+INFO: [USF-ModelSim-15] Creating automatic 'do' files...
+INFO: [USF-ModelSim-69] Executing 'COMPILE and ANALYZE' step in 'E:/github/cpu31/post_sim/project_1/project_1.sim/sim_1/synth/timing'
+Reading D:/modelism/tcl/vsim/pref.tcl
+
+# 10.4c
+
+# do {_246tb_ex9_tb_compile.do}
+# Model Technology ModelSim PE vmap 10.4c Lib Mapping Utility 2015.07 Jul 20 2015
+# vmap xil_defaultlib msim/xil_defaultlib 
+# Copying D:/modelism/win32pe/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+# 
+# Model Technology ModelSim PE vlog 10.4c Compiler 2015.07 Jul 20 2015
+# Start time: 05:22:29 on May 16,2025
+# vlog -64 -incr -work xil_defaultlib _246tb_ex9_tb_time_synth.v ../../../../project_1.srcs/sim_1/new/top_tb.v 
+# -- Compiling module RAM256X1S_UNIQ_BASE_
+# -- Compiling module RAM256X1S_HD526
+# -- Compiling module RAM256X1S_HD527
+# -- Compiling module RAM256X1S_HD528
+# -- Compiling module RAM256X1S_HD529
+# -- Compiling module RAM256X1S_HD530
+# -- Compiling module RAM256X1S_HD531
+# -- Compiling module RAM256X1S_HD532
+# -- Compiling module RAM256X1S_HD533
+# -- Compiling module RAM256X1S_HD534
+# -- Compiling module RAM256X1S_HD535
+# -- Compiling module RAM256X1S_HD536
+# -- Compiling module RAM256X1S_HD537
+# -- Compiling module RAM256X1S_HD538
+# -- Compiling module RAM256X1S_HD539
+# -- Compiling module RAM256X1S_HD540
+# -- Compiling module RAM256X1S_HD541
+# -- Compiling module RAM256X1S_HD542
+# -- Compiling module RAM256X1S_HD543
+# -- Compiling module RAM256X1S_HD544
+# -- Compiling module RAM256X1S_HD545
+# -- Compiling module RAM256X1S_HD546
+# -- Compiling module RAM256X1S_HD547
+# -- Compiling module RAM256X1S_HD548
+# -- Compiling module RAM256X1S_HD549
+# -- Compiling module RAM256X1S_HD550
+# -- Compiling module RAM256X1S_HD551
+# -- Compiling module RAM256X1S_HD552
+# -- Compiling module RAM256X1S_HD553
+# -- Compiling module RAM256X1S_HD554
+# -- Compiling module RAM256X1S_HD555
+# -- Compiling module RAM256X1S_HD556
+# -- Compiling module RAM256X1S_HD557
+# -- Compiling module RAM256X1S_HD558
+# -- Compiling module RAM256X1S_HD559
+# -- Compiling module RAM256X1S_HD560
+# -- Compiling module RAM256X1S_HD561
+# -- Compiling module RAM256X1S_HD562
+# -- Compiling module RAM256X1S_HD563
+# -- Compiling module RAM256X1S_HD564
+# -- Compiling module RAM256X1S_HD565
+# -- Compiling module RAM256X1S_HD566
+# -- Compiling module RAM256X1S_HD567
+# -- Compiling module RAM256X1S_HD568
+# -- Compiling module RAM256X1S_HD569
+# -- Compiling module RAM256X1S_HD570
+# -- Compiling module RAM256X1S_HD571
+# -- Compiling module RAM256X1S_HD572
+# -- Compiling module RAM256X1S_HD573
+# -- Compiling module RAM256X1S_HD574
+# -- Compiling module RAM256X1S_HD575
+# -- Compiling module RAM256X1S_HD576
+# -- Compiling module RAM256X1S_HD577
+# -- Compiling module RAM256X1S_HD578
+# -- Compiling module RAM256X1S_HD579
+# -- Compiling module RAM256X1S_HD580
+# -- Compiling module RAM256X1S_HD581
+# -- Compiling module RAM256X1S_HD582
+# -- Compiling module RAM256X1S_HD583
+# -- Compiling module RAM256X1S_HD584
+# -- Compiling module RAM256X1S_HD585
+# -- Compiling module RAM256X1S_HD586
+# -- Compiling module RAM256X1S_HD587
+# -- Compiling module RAM256X1S_HD588
+# -- Compiling module RAM256X1S_HD589
+# -- Compiling module RAM256X1S_HD590
+# -- Compiling module RAM256X1S_HD591
+# -- Compiling module RAM256X1S_HD592
+# -- Compiling module RAM256X1S_HD593
+# -- Compiling module RAM256X1S_HD594
+# -- Compiling module RAM256X1S_HD595
+# -- Compiling module RAM256X1S_HD596
+# -- Compiling module RAM256X1S_HD597
+# -- Compiling module RAM256X1S_HD598
+# -- Compiling module RAM256X1S_HD599
+# -- Compiling module RAM256X1S_HD600
+# -- Compiling module RAM256X1S_HD601
+# -- Compiling module RAM256X1S_HD602
+# -- Compiling module RAM256X1S_HD603
+# -- Compiling module RAM256X1S_HD604
+# -- Compiling module RAM256X1S_HD605
+# -- Compiling module RAM256X1S_HD606
+# -- Compiling module RAM256X1S_HD607
+# -- Compiling module RAM256X1S_HD608
+# -- Compiling module RAM256X1S_HD609
+# -- Compiling module RAM256X1S_HD610
+# -- Compiling module RAM256X1S_HD611
+# -- Compiling module RAM256X1S_HD612
+# -- Compiling module RAM256X1S_HD613
+# -- Compiling module RAM256X1S_HD614
+# -- Compiling module RAM256X1S_HD615
+# -- Compiling module RAM256X1S_HD616
+# -- Compiling module RAM256X1S_HD617
+# -- Compiling module RAM256X1S_HD618
+# -- Compiling module RAM256X1S_HD619
+# -- Compiling module RAM256X1S_HD620
+# -- Compiling module RAM256X1S_HD621
+# -- Compiling module RAM256X1S_HD622
+# -- Compiling module RAM256X1S_HD623
+# -- Compiling module RAM256X1S_HD624
+# -- Compiling module RAM256X1S_HD625
+# -- Compiling module RAM256X1S_HD626
+# -- Compiling module RAM256X1S_HD627
+# -- Compiling module RAM256X1S_HD628
+# -- Compiling module RAM256X1S_HD629
+# -- Compiling module RAM256X1S_HD630
+# -- Compiling module RAM256X1S_HD631
+# -- Compiling module RAM256X1S_HD632
+# -- Compiling module RAM256X1S_HD633
+# -- Compiling module RAM256X1S_HD634
+# -- Compiling module RAM256X1S_HD635
+# -- Compiling module RAM256X1S_HD636
+# -- Compiling module RAM256X1S_HD637
+# -- Compiling module RAM256X1S_HD638
+# -- Compiling module RAM256X1S_HD639
+# -- Compiling module RAM256X1S_HD640
+# -- Compiling module RAM256X1S_HD641
+# -- Compiling module RAM256X1S_HD642
+# -- Compiling module RAM256X1S_HD643
+# -- Compiling module RAM256X1S_HD644
+# -- Compiling module RAM256X1S_HD645
+# -- Compiling module RAM256X1S_HD646
+# -- Compiling module RAM256X1S_HD647
+# -- Compiling module RAM256X1S_HD648
+# -- Compiling module RAM256X1S_HD649
+# -- Compiling module RAM256X1S_HD650
+# -- Compiling module RAM256X1S_HD651
+# -- Compiling module RAM256X1S_HD652
+# -- Compiling module RAM256X1S_HD653
+# -- Compiling module RAM256X1S_HD654
+# -- Compiling module RAM256X1S_HD655
+# -- Compiling module RAM256X1S_HD656
+# -- Compiling module RAM256X1S_HD657
+# -- Compiling module RAM256X1S_HD658
+# -- Compiling module RAM256X1S_HD659
+# -- Compiling module RAM256X1S_HD660
+# -- Compiling module RAM256X1S_HD661
+# -- Compiling module RAM256X1S_HD662
+# -- Compiling module RAM256X1S_HD663
+# -- Compiling module RAM256X1S_HD664
+# -- Compiling module RAM256X1S_HD665
+# -- Compiling module RAM256X1S_HD666
+# -- Compiling module RAM256X1S_HD667
+# -- Compiling module RAM256X1S_HD668
+# -- Compiling module RAM256X1S_HD669
+# -- Compiling module RAM256X1S_HD670
+# -- Compiling module RAM256X1S_HD671
+# -- Compiling module RAM256X1S_HD672
+# -- Compiling module RAM256X1S_HD673
+# -- Compiling module RAM256X1S_HD674
+# -- Compiling module RAM256X1S_HD675
+# -- Compiling module RAM256X1S_HD676
+# -- Compiling module RAM256X1S_HD677
+# -- Compiling module RAM256X1S_HD678
+# -- Compiling module RAM256X1S_HD679
+# -- Compiling module RAM256X1S_HD680
+# -- Compiling module RAM256X1S_HD681
+# -- Compiling module RAM256X1S_HD682
+# -- Compiling module RAM256X1S_HD683
+# -- Compiling module RAM256X1S_HD684
+# -- Compiling module RAM256X1S_HD685
+# -- Compiling module RAM256X1S_HD686
+# -- Compiling module RAM256X1S_HD687
+# -- Compiling module RAM256X1S_HD688
+# -- Compiling module RAM256X1S_HD689
+# -- Compiling module RAM256X1S_HD690
+# -- Compiling module RAM256X1S_HD691
+# -- Compiling module RAM256X1S_HD692
+# -- Compiling module RAM256X1S_HD693
+# -- Compiling module RAM256X1S_HD694
+# -- Compiling module RAM256X1S_HD695
+# -- Compiling module RAM256X1S_HD696
+# -- Compiling module RAM256X1S_HD697
+# -- Compiling module RAM256X1S_HD698
+# -- Compiling module RAM256X1S_HD699
+# -- Compiling module RAM256X1S_HD700
+# -- Compiling module RAM256X1S_HD701
+# -- Compiling module RAM256X1S_HD702
+# -- Compiling module RAM256X1S_HD703
+# -- Compiling module RAM256X1S_HD704
+# -- Compiling module RAM256X1S_HD705
+# -- Compiling module RAM256X1S_HD706
+# -- Compiling module RAM256X1S_HD707
+# -- Compiling module RAM256X1S_HD708
+# -- Compiling module RAM256X1S_HD709
+# -- Compiling module RAM256X1S_HD710
+# -- Compiling module RAM256X1S_HD711
+# -- Compiling module RAM256X1S_HD712
+# -- Compiling module RAM256X1S_HD713
+# -- Compiling module RAM256X1S_HD714
+# -- Compiling module RAM256X1S_HD715
+# -- Compiling module RAM256X1S_HD716
+# -- Compiling module RAM256X1S_HD717
+# -- Compiling module RAM256X1S_HD718
+# -- Compiling module RAM256X1S_HD719
+# -- Compiling module RAM256X1S_HD720
+# -- Compiling module RAM256X1S_HD721
+# -- Compiling module RAM256X1S_HD722
+# -- Compiling module RAM256X1S_HD723
+# -- Compiling module RAM256X1S_HD724
+# -- Compiling module RAM256X1S_HD725
+# -- Compiling module RAM256X1S_HD726
+# -- Compiling module RAM256X1S_HD727
+# -- Compiling module RAM256X1S_HD728
+# -- Compiling module RAM256X1S_HD729
+# -- Compiling module RAM256X1S_HD730
+# -- Compiling module RAM256X1S_HD731
+# -- Compiling module RAM256X1S_HD732
+# -- Compiling module RAM256X1S_HD733
+# -- Compiling module RAM256X1S_HD734
+# -- Compiling module RAM256X1S_HD735
+# -- Compiling module RAM256X1S_HD736
+# -- Compiling module RAM256X1S_HD737
+# -- Compiling module RAM256X1S_HD738
+# -- Compiling module RAM256X1S_HD739
+# -- Compiling module RAM256X1S_HD740
+# -- Compiling module RAM256X1S_HD741
+# -- Compiling module RAM256X1S_HD742
+# -- Compiling module RAM256X1S_HD743
+# -- Compiling module RAM256X1S_HD744
+# -- Compiling module RAM256X1S_HD745
+# -- Compiling module RAM256X1S_HD746
+# -- Compiling module RAM256X1S_HD747
+# -- Compiling module RAM256X1S_HD748
+# -- Compiling module RAM256X1S_HD749
+# -- Compiling module RAM256X1S_HD750
+# -- Compiling module RAM256X1S_HD751
+# -- Compiling module RAM256X1S_HD752
+# -- Compiling module RAM256X1S_HD753
+# -- Compiling module RAM256X1S_HD754
+# -- Compiling module RAM256X1S_HD755
+# -- Compiling module RAM256X1S_HD756
+# -- Compiling module RAM256X1S_HD757
+# -- Compiling module RAM256X1S_HD758
+# -- Compiling module RAM256X1S_HD759
+# -- Compiling module RAM256X1S_HD760
+# -- Compiling module RAM256X1S_HD761
+# -- Compiling module RAM256X1S_HD762
+# -- Compiling module RAM256X1S_HD763
+# -- Compiling module RAM256X1S_HD764
+# -- Compiling module RAM256X1S_HD765
+# -- Compiling module RAM256X1S_HD766
+# -- Compiling module RAM256X1S_HD767
+# -- Compiling module RAM256X1S_HD768
+# -- Compiling module RAM256X1S_HD769
+# -- Compiling module RAM256X1S_HD770
+# -- Compiling module RAM256X1S_HD771
+# -- Compiling module RAM256X1S_HD772
+# -- Compiling module RAM256X1S_HD773
+# -- Compiling module RAM256X1S_HD774
+# -- Compiling module RAM256X1S_HD775
+# -- Compiling module RAM256X1S_HD776
+# -- Compiling module RAM256X1S_HD777
+# -- Compiling module RAM256X1S_HD778
+# -- Compiling module RAM256X1S_HD779
+# -- Compiling module RAM256X1S_HD780
+# -- Compiling module imem
+# -- Compiling module DMEM
+# -- Compiling module IMEM
+# -- Compiling module IMEM_0
+# -- Compiling module cpu
+# -- Compiling module imem_HD522
+# -- Compiling module mux1
+# -- Compiling module mux2
+# -- Compiling module npcmaker
+# -- Compiling module pcreg
+# -- Compiling module regfile
+# -- Compiling module sccomp_dataflow
+# -- Compiling module imem_dist_mem_gen_v8_0_10
+# -- Compiling module imem_dist_mem_gen_v8_0_10_HD523
+# -- Compiling module imem_dist_mem_gen_v8_0_10_synth
+# -- Compiling module imem_dist_mem_gen_v8_0_10_synth_HD524
+# -- Compiling module imem_rom
+# -- Compiling module imem_rom_HD525
+# -- Compiling module glbl
+# -- Compiling module _246tb_ex9_tb
+# 
+# Top level modules:
+# 	glbl
+# 	_246tb_ex9_tb
+# End time: 05:22:30 on May 16,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 1
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 1989.504 ; gain = 0.000
+INFO: [USF-ModelSim-69] 'compile' step finished in '7' seconds
+INFO: [USF-ModelSim-4] ModelSim::Simulate design
+INFO: [USF-ModelSim-69] Executing 'SIMULATE' step in 'E:/github/cpu31/post_sim/project_1/project_1.sim/sim_1/synth/timing'
+Program launched (PID=50864)
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:11 . Memory (MB): peak = 1989.504 ; gain = 0.000
+launch_simulation
+INFO: [USF-ModelSim-47] Finding simulator installation...
+INFO: [USF-ModelSim-49] Using simulator executables from 'D:\modelism\win32pe'
+INFO: [USF-ModelSim-30] Simulation object is 'sim_1'...
+INFO: [USF-modelsim-7] Finding pre-compiled libraries...
+CRITICAL WARNING: [USF-modelsim-8] Failed to find the pre-compiled simulation library!
+INFO: [USF-modelsim-9]  Recommendation:- Please follow these instructions to resolve this issue:-
+ - set the 'COMPXLIB.MODELSIM_COMPILED_LIBRARY_DIR' project property to the directory where Xilinx simulation libraries are compiled for ModelSim/QuestaSim, or
+ - set the 'MODELSIM' environment variable to point to the modelsim.ini file, or
+ - set the 'WD_MGC' environment variable to point to the directory containing the modelsim.ini file
+INFO: [USF-ModelSim-40] Inspecting design source files for '_246tb_ex9_tb' in fileset 'sim_1'...
+INFO: [USF-ModelSim-25] Exported 'E:/github/cpu31/post_sim/project_1/project_1.sim/sim_1/behav/imem.mif'
+INFO: [USF-ModelSim-25] Exported 'E:/github/cpu31/post_sim/project_1/project_1.sim/sim_1/behav/mips_31_mars_simulate.coe'
+INFO: [USF-ModelSim-25] Exported 'E:/github/cpu31/post_sim/project_1/project_1.sim/sim_1/behav/mips_31_mars_simulate.coe'
+INFO: [USF-ModelSim-107] Finding global include files...
+INFO: [USF-ModelSim-108] Finding include directories and verilog header directory paths...
+INFO: [USF-ModelSim-109] Fetching design files from 'sim_1'...
+INFO: [USF-ModelSim-2] ModelSim::Compile design
+INFO: [USF-ModelSim-15] Creating automatic 'do' files...
+INFO: [USF-ModelSim-69] Executing 'COMPILE and ANALYZE' step in 'E:/github/cpu31/post_sim/project_1/project_1.sim/sim_1/behav'
+Reading D:/modelism/tcl/vsim/pref.tcl
+
+# 10.4c
+
+# do {_246tb_ex9_tb_compile.do}
+# Model Technology ModelSim PE vmap 10.4c Lib Mapping Utility 2015.07 Jul 20 2015
+# vmap dist_mem_gen_v8_0_10 msim/dist_mem_gen_v8_0_10 
+# Copying D:/modelism/win32pe/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# Model Technology ModelSim PE vmap 10.4c Lib Mapping Utility 2015.07 Jul 20 2015
+# vmap xil_defaultlib msim/xil_defaultlib 
+# Modifying modelsim.ini
+# ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+# 
+# Model Technology ModelSim PE vlog 10.4c Compiler 2015.07 Jul 20 2015
+# Start time: 05:22:54 on May 16,2025
+# vlog -64 -incr -work dist_mem_gen_v8_0_10 ../../../project_1.ip_user_files/ipstatic/dist_mem_gen_v8_0_10/simulation/dist_mem_gen_v8_0.v 
+# -- Compiling module dist_mem_gen_v8_0_10
+# 
+# Top level modules:
+# 	dist_mem_gen_v8_0_10
+# End time: 05:22:54 on May 16,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+# 
+# Model Technology ModelSim PE vlog 10.4c Compiler 2015.07 Jul 20 2015
+# Start time: 05:22:54 on May 16,2025
+# vlog -64 -incr -work xil_defaultlib ../../../project_1.srcs/sources_1/ip/imem/sim/imem.v ../../../project_1.srcs/sources_1/new/shamt_ext.v ../../../project_1.srcs/sources_1/new/regfile.v ../../../project_1.srcs/sources_1/new/pc.v ../../../project_1.srcs/sources_1/new/npcmaker.v ../../../project_1.srcs/sources_1/new/mux6.v ../../../project_1.srcs/sources_1/new/mux5.v ../../../project_1.srcs/sources_1/new/mux4.v ../../../project_1.srcs/sources_1/new/mux3.v ../../../project_1.srcs/sources_1/new/mux2.v ../../../project_1.srcs/sources_1/new/mux1.v ../../../project_1.srcs/sources_1/new/Jextend.v ../../../project_1.srcs/sources_1/new/imdt_ext.v ../../../project_1.srcs/sources_1/new/controller.v ../../../project_1.srcs/sources_1/new/ALU.v ../../../project_1.srcs/sources_1/new/DMEM.v ../../../project_1.srcs/sources_1/new/IMEM.v ../../../project_1.srcs/sources_1/new/cpu.v ../../../project_1.srcs/sources_1/new/top.v ../../../project_1.srcs/sim_1/new/top_tb.v 
+# -- Compiling module imem
+# -- Compiling module shamt_ext
+# -- Compiling module regfile
+# -- Compiling module pcreg
+# -- Compiling module npcmaker
+# -- Compiling module mux6
+# -- Compiling module mux5
+# -- Compiling module mux4
+# -- Compiling module mux3
+# -- Compiling module mux2
+# -- Compiling module mux1
+# -- Compiling module jextend
+# -- Compiling module imdt_ext
+# -- Compiling module controller
+# -- Compiling module alu
+# -- Compiling module DMEM
+# -- Compiling module IMEM
+# -- Compiling module cpu
+# -- Compiling module sccomp_dataflow
+# -- Compiling module _246tb_ex9_tb
+# 
+# Top level modules:
+# 	_246tb_ex9_tb
+# End time: 05:22:55 on May 16,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim PE vlog 10.4c Compiler 2015.07 Jul 20 2015
+# Start time: 05:22:55 on May 16,2025
+# vlog -work xil_defaultlib glbl.v 
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# End time: 05:22:55 on May 16,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 2005.410 ; gain = 0.000
+INFO: [USF-ModelSim-69] 'compile' step finished in '6' seconds
+INFO: [USF-ModelSim-4] ModelSim::Simulate design
+INFO: [USF-ModelSim-69] Executing 'SIMULATE' step in 'E:/github/cpu31/post_sim/project_1/project_1.sim/sim_1/behav'
+Program launched (PID=34380)
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 2005.410 ; gain = 0.000
+set_property target_simulator XSim [current_project]
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for '_246tb_ex9_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-25] Exported 'E:/github/cpu31/post_sim/project_1/project_1.sim/sim_1/behav/imem.mif'
+INFO: [USF-XSim-25] Exported 'E:/github/cpu31/post_sim/project_1/project_1.sim/sim_1/behav/mips_31_mars_simulate.coe'
+INFO: [USF-XSim-25] Exported 'E:/github/cpu31/post_sim/project_1/project_1.sim/sim_1/behav/mips_31_mars_simulate.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/github/cpu31/post_sim/project_1/project_1.sim/sim_1/behav'
+"xvlog -m64 --relax -prj _246tb_ex9_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/github/cpu31/post_sim/project_1/project_1.ip_user_files/ipstatic/dist_mem_gen_v8_0_10/simulation/dist_mem_gen_v8_0.v" into library dist_mem_gen_v8_0_10
+INFO: [VRFC 10-311] analyzing module dist_mem_gen_v8_0_10
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/github/cpu31/post_sim/project_1/project_1.srcs/sources_1/ip/imem/sim/imem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module imem
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/github/cpu31/post_sim/project_1/project_1.srcs/sources_1/new/shamt_ext.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module shamt_ext
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/github/cpu31/post_sim/project_1/project_1.srcs/sources_1/new/regfile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/github/cpu31/post_sim/project_1/project_1.srcs/sources_1/new/pc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pcreg
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/github/cpu31/post_sim/project_1/project_1.srcs/sources_1/new/npcmaker.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module npcmaker
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/github/cpu31/post_sim/project_1/project_1.srcs/sources_1/new/mux6.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux6
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/github/cpu31/post_sim/project_1/project_1.srcs/sources_1/new/mux5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux5
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/github/cpu31/post_sim/project_1/project_1.srcs/sources_1/new/mux4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux4
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/github/cpu31/post_sim/project_1/project_1.srcs/sources_1/new/mux3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux3
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/github/cpu31/post_sim/project_1/project_1.srcs/sources_1/new/mux2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/github/cpu31/post_sim/project_1/project_1.srcs/sources_1/new/mux1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux1
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/github/cpu31/post_sim/project_1/project_1.srcs/sources_1/new/Jextend.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module jextend
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/github/cpu31/post_sim/project_1/project_1.srcs/sources_1/new/imdt_ext.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module imdt_ext
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/github/cpu31/post_sim/project_1/project_1.srcs/sources_1/new/controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/github/cpu31/post_sim/project_1/project_1.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/github/cpu31/post_sim/project_1/project_1.srcs/sources_1/new/DMEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DMEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/github/cpu31/post_sim/project_1/project_1.srcs/sources_1/new/IMEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IMEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/github/cpu31/post_sim/project_1/project_1.srcs/sources_1/new/cpu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/github/cpu31/post_sim/project_1/project_1.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sccomp_dataflow
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/github/cpu31/post_sim/project_1/project_1.srcs/sim_1/new/top_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module _246tb_ex9_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/github/cpu31/post_sim/project_1/project_1.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/github/cpu31/post_sim/project_1/project_1.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto ebb25405b8204d7690bd5745b8ac7c48 --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_10 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot _246tb_ex9_tb_behav xil_defaultlib._246tb_ex9_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.controller
+Compiling module xil_defaultlib.DMEM
+Compiling module xil_defaultlib.imdt_ext
+Compiling module dist_mem_gen_v8_0_10.dist_mem_gen_v8_0_10(C_FAMILY="a...
+Compiling module xil_defaultlib.imem
+Compiling module xil_defaultlib.IMEM
+Compiling module xil_defaultlib.jextend
+Compiling module xil_defaultlib.mux1
+Compiling module xil_defaultlib.mux3
+Compiling module xil_defaultlib.mux4
+Compiling module xil_defaultlib.mux5
+Compiling module xil_defaultlib.mux6
+Compiling module xil_defaultlib.npcmaker
+Compiling module xil_defaultlib.pcreg
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.shamt_ext
+Compiling module xil_defaultlib.mux2
+Compiling module xil_defaultlib.cpu
+Compiling module xil_defaultlib.sccomp_dataflow
+Compiling module xil_defaultlib._246tb_ex9_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot _246tb_ex9_tb_behav
+
+****** Webtalk v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source E:/github/cpu31/post_sim/project_1/project_1.sim/sim_1/behav/xsim.dir/_246tb_ex9_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Fri May 16 05:23:33 2025...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 2005.410 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/github/cpu31/post_sim/project_1/project_1.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "_246tb_ex9_tb_behav -key {Behavioral:sim_1:Functional:_246tb_ex9_tb} -tclbatch {_246tb_ex9_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source _246tb_ex9_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+INFO: [USF-XSim-96] XSim completed. Design snapshot '_246tb_ex9_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:11 . Memory (MB): peak = 2005.410 ; gain = 0.000
+set_property target_simulator ModelSim [current_project]
+launch_simulation -mode post-synthesis -type timing
+INFO: [USF-ModelSim-47] Finding simulator installation...
+INFO: [USF-ModelSim-49] Using simulator executables from 'D:\modelism\win32pe'
+INFO: [USF-ModelSim-30] Simulation object is 'sim_1'...
+INFO: [USF-ModelSim-29] Writing simulation netlist file for design 'synth_1'...
+INFO: [USF-ModelSim-101] write_verilog -mode timesim -nolib -sdf_anno true -force -file "E:/github/cpu31/post_sim/project_1/project_1.sim/sim_1/synth/timing/_246tb_ex9_tb_time_synth.v"
+INFO: [USF-ModelSim-30] Writing SDF file...
+INFO: [USF-ModelSim-102] write_sdf -mode timesim -process_corner slow -force -file "E:/github/cpu31/post_sim/project_1/project_1.sim/sim_1/synth/timing/_246tb_ex9_tb_time_synth.sdf"
+INFO: [USF-ModelSim-34] Netlist generated:E:/github/cpu31/post_sim/project_1/project_1.sim/sim_1/synth/timing/_246tb_ex9_tb_time_synth.v
+INFO: [USF-ModelSim-35] SDF generated:E:/github/cpu31/post_sim/project_1/project_1.sim/sim_1/synth/timing/_246tb_ex9_tb_time_synth.sdf
+INFO: [USF-modelsim-7] Finding pre-compiled libraries...
+CRITICAL WARNING: [USF-modelsim-8] Failed to find the pre-compiled simulation library!
+INFO: [USF-modelsim-9]  Recommendation:- Please follow these instructions to resolve this issue:-
+ - set the 'COMPXLIB.MODELSIM_COMPILED_LIBRARY_DIR' project property to the directory where Xilinx simulation libraries are compiled for ModelSim/QuestaSim, or
+ - set the 'MODELSIM' environment variable to point to the modelsim.ini file, or
+ - set the 'WD_MGC' environment variable to point to the directory containing the modelsim.ini file
+INFO: [USF-ModelSim-40] Inspecting design source files for '_246tb_ex9_tb' in fileset 'sim_1'...
+INFO: [USF-ModelSim-25] Exported 'E:/github/cpu31/post_sim/project_1/project_1.sim/sim_1/synth/timing/imem.mif'
+INFO: [USF-ModelSim-25] Exported 'E:/github/cpu31/post_sim/project_1/project_1.sim/sim_1/synth/timing/mips_31_mars_simulate.coe'
+INFO: [USF-ModelSim-25] Exported 'E:/github/cpu31/post_sim/project_1/project_1.sim/sim_1/synth/timing/mips_31_mars_simulate.coe'
+INFO: [USF-ModelSim-2] ModelSim::Compile design
+INFO: [USF-ModelSim-15] Creating automatic 'do' files...
+INFO: [USF-ModelSim-69] Executing 'COMPILE and ANALYZE' step in 'E:/github/cpu31/post_sim/project_1/project_1.sim/sim_1/synth/timing'
+Reading D:/modelism/tcl/vsim/pref.tcl
+
+# 10.4c
+
+# do {_246tb_ex9_tb_compile.do}
+# Model Technology ModelSim PE vmap 10.4c Lib Mapping Utility 2015.07 Jul 20 2015
+# vmap xil_defaultlib msim/xil_defaultlib 
+# Copying D:/modelism/win32pe/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+# 
+# Model Technology ModelSim PE vlog 10.4c Compiler 2015.07 Jul 20 2015
+# Start time: 05:23:56 on May 16,2025
+# vlog -64 -incr -work xil_defaultlib _246tb_ex9_tb_time_synth.v ../../../../project_1.srcs/sim_1/new/top_tb.v 
+# -- Compiling module RAM256X1S_UNIQ_BASE_
+# -- Compiling module RAM256X1S_HD526
+# -- Compiling module RAM256X1S_HD527
+# -- Compiling module RAM256X1S_HD528
+# -- Compiling module RAM256X1S_HD529
+# -- Compiling module RAM256X1S_HD530
+# -- Compiling module RAM256X1S_HD531
+# -- Compiling module RAM256X1S_HD532
+# -- Compiling module RAM256X1S_HD533
+# -- Compiling module RAM256X1S_HD534
+# -- Compiling module RAM256X1S_HD535
+# -- Compiling module RAM256X1S_HD536
+# -- Compiling module RAM256X1S_HD537
+# -- Compiling module RAM256X1S_HD538
+# -- Compiling module RAM256X1S_HD539
+# -- Compiling module RAM256X1S_HD540
+# -- Compiling module RAM256X1S_HD541
+# -- Compiling module RAM256X1S_HD542
+# -- Compiling module RAM256X1S_HD543
+# -- Compiling module RAM256X1S_HD544
+# -- Compiling module RAM256X1S_HD545
+# -- Compiling module RAM256X1S_HD546
+# -- Compiling module RAM256X1S_HD547
+# -- Compiling module RAM256X1S_HD548
+# -- Compiling module RAM256X1S_HD549
+# -- Compiling module RAM256X1S_HD550
+# -- Compiling module RAM256X1S_HD551
+# -- Compiling module RAM256X1S_HD552
+# -- Compiling module RAM256X1S_HD553
+# -- Compiling module RAM256X1S_HD554
+# -- Compiling module RAM256X1S_HD555
+# -- Compiling module RAM256X1S_HD556
+# -- Compiling module RAM256X1S_HD557
+# -- Compiling module RAM256X1S_HD558
+# -- Compiling module RAM256X1S_HD559
+# -- Compiling module RAM256X1S_HD560
+# -- Compiling module RAM256X1S_HD561
+# -- Compiling module RAM256X1S_HD562
+# -- Compiling module RAM256X1S_HD563
+# -- Compiling module RAM256X1S_HD564
+# -- Compiling module RAM256X1S_HD565
+# -- Compiling module RAM256X1S_HD566
+# -- Compiling module RAM256X1S_HD567
+# -- Compiling module RAM256X1S_HD568
+# -- Compiling module RAM256X1S_HD569
+# -- Compiling module RAM256X1S_HD570
+# -- Compiling module RAM256X1S_HD571
+# -- Compiling module RAM256X1S_HD572
+# -- Compiling module RAM256X1S_HD573
+# -- Compiling module RAM256X1S_HD574
+# -- Compiling module RAM256X1S_HD575
+# -- Compiling module RAM256X1S_HD576
+# -- Compiling module RAM256X1S_HD577
+# -- Compiling module RAM256X1S_HD578
+# -- Compiling module RAM256X1S_HD579
+# -- Compiling module RAM256X1S_HD580
+# -- Compiling module RAM256X1S_HD581
+# -- Compiling module RAM256X1S_HD582
+# -- Compiling module RAM256X1S_HD583
+# -- Compiling module RAM256X1S_HD584
+# -- Compiling module RAM256X1S_HD585
+# -- Compiling module RAM256X1S_HD586
+# -- Compiling module RAM256X1S_HD587
+# -- Compiling module RAM256X1S_HD588
+# -- Compiling module RAM256X1S_HD589
+# -- Compiling module RAM256X1S_HD590
+# -- Compiling module RAM256X1S_HD591
+# -- Compiling module RAM256X1S_HD592
+# -- Compiling module RAM256X1S_HD593
+# -- Compiling module RAM256X1S_HD594
+# -- Compiling module RAM256X1S_HD595
+# -- Compiling module RAM256X1S_HD596
+# -- Compiling module RAM256X1S_HD597
+# -- Compiling module RAM256X1S_HD598
+# -- Compiling module RAM256X1S_HD599
+# -- Compiling module RAM256X1S_HD600
+# -- Compiling module RAM256X1S_HD601
+# -- Compiling module RAM256X1S_HD602
+# -- Compiling module RAM256X1S_HD603
+# -- Compiling module RAM256X1S_HD604
+# -- Compiling module RAM256X1S_HD605
+# -- Compiling module RAM256X1S_HD606
+# -- Compiling module RAM256X1S_HD607
+# -- Compiling module RAM256X1S_HD608
+# -- Compiling module RAM256X1S_HD609
+# -- Compiling module RAM256X1S_HD610
+# -- Compiling module RAM256X1S_HD611
+# -- Compiling module RAM256X1S_HD612
+# -- Compiling module RAM256X1S_HD613
+# -- Compiling module RAM256X1S_HD614
+# -- Compiling module RAM256X1S_HD615
+# -- Compiling module RAM256X1S_HD616
+# -- Compiling module RAM256X1S_HD617
+# -- Compiling module RAM256X1S_HD618
+# -- Compiling module RAM256X1S_HD619
+# -- Compiling module RAM256X1S_HD620
+# -- Compiling module RAM256X1S_HD621
+# -- Compiling module RAM256X1S_HD622
+# -- Compiling module RAM256X1S_HD623
+# -- Compiling module RAM256X1S_HD624
+# -- Compiling module RAM256X1S_HD625
+# -- Compiling module RAM256X1S_HD626
+# -- Compiling module RAM256X1S_HD627
+# -- Compiling module RAM256X1S_HD628
+# -- Compiling module RAM256X1S_HD629
+# -- Compiling module RAM256X1S_HD630
+# -- Compiling module RAM256X1S_HD631
+# -- Compiling module RAM256X1S_HD632
+# -- Compiling module RAM256X1S_HD633
+# -- Compiling module RAM256X1S_HD634
+# -- Compiling module RAM256X1S_HD635
+# -- Compiling module RAM256X1S_HD636
+# -- Compiling module RAM256X1S_HD637
+# -- Compiling module RAM256X1S_HD638
+# -- Compiling module RAM256X1S_HD639
+# -- Compiling module RAM256X1S_HD640
+# -- Compiling module RAM256X1S_HD641
+# -- Compiling module RAM256X1S_HD642
+# -- Compiling module RAM256X1S_HD643
+# -- Compiling module RAM256X1S_HD644
+# -- Compiling module RAM256X1S_HD645
+# -- Compiling module RAM256X1S_HD646
+# -- Compiling module RAM256X1S_HD647
+# -- Compiling module RAM256X1S_HD648
+# -- Compiling module RAM256X1S_HD649
+# -- Compiling module RAM256X1S_HD650
+# -- Compiling module RAM256X1S_HD651
+# -- Compiling module RAM256X1S_HD652
+# -- Compiling module RAM256X1S_HD653
+# -- Compiling module RAM256X1S_HD654
+# -- Compiling module RAM256X1S_HD655
+# -- Compiling module RAM256X1S_HD656
+# -- Compiling module RAM256X1S_HD657
+# -- Compiling module RAM256X1S_HD658
+# -- Compiling module RAM256X1S_HD659
+# -- Compiling module RAM256X1S_HD660
+# -- Compiling module RAM256X1S_HD661
+# -- Compiling module RAM256X1S_HD662
+# -- Compiling module RAM256X1S_HD663
+# -- Compiling module RAM256X1S_HD664
+# -- Compiling module RAM256X1S_HD665
+# -- Compiling module RAM256X1S_HD666
+# -- Compiling module RAM256X1S_HD667
+# -- Compiling module RAM256X1S_HD668
+# -- Compiling module RAM256X1S_HD669
+# -- Compiling module RAM256X1S_HD670
+# -- Compiling module RAM256X1S_HD671
+# -- Compiling module RAM256X1S_HD672
+# -- Compiling module RAM256X1S_HD673
+# -- Compiling module RAM256X1S_HD674
+# -- Compiling module RAM256X1S_HD675
+# -- Compiling module RAM256X1S_HD676
+# -- Compiling module RAM256X1S_HD677
+# -- Compiling module RAM256X1S_HD678
+# -- Compiling module RAM256X1S_HD679
+# -- Compiling module RAM256X1S_HD680
+# -- Compiling module RAM256X1S_HD681
+# -- Compiling module RAM256X1S_HD682
+# -- Compiling module RAM256X1S_HD683
+# -- Compiling module RAM256X1S_HD684
+# -- Compiling module RAM256X1S_HD685
+# -- Compiling module RAM256X1S_HD686
+# -- Compiling module RAM256X1S_HD687
+# -- Compiling module RAM256X1S_HD688
+# -- Compiling module RAM256X1S_HD689
+# -- Compiling module RAM256X1S_HD690
+# -- Compiling module RAM256X1S_HD691
+# -- Compiling module RAM256X1S_HD692
+# -- Compiling module RAM256X1S_HD693
+# -- Compiling module RAM256X1S_HD694
+# -- Compiling module RAM256X1S_HD695
+# -- Compiling module RAM256X1S_HD696
+# -- Compiling module RAM256X1S_HD697
+# -- Compiling module RAM256X1S_HD698
+# -- Compiling module RAM256X1S_HD699
+# -- Compiling module RAM256X1S_HD700
+# -- Compiling module RAM256X1S_HD701
+# -- Compiling module RAM256X1S_HD702
+# -- Compiling module RAM256X1S_HD703
+# -- Compiling module RAM256X1S_HD704
+# -- Compiling module RAM256X1S_HD705
+# -- Compiling module RAM256X1S_HD706
+# -- Compiling module RAM256X1S_HD707
+# -- Compiling module RAM256X1S_HD708
+# -- Compiling module RAM256X1S_HD709
+# -- Compiling module RAM256X1S_HD710
+# -- Compiling module RAM256X1S_HD711
+# -- Compiling module RAM256X1S_HD712
+# -- Compiling module RAM256X1S_HD713
+# -- Compiling module RAM256X1S_HD714
+# -- Compiling module RAM256X1S_HD715
+# -- Compiling module RAM256X1S_HD716
+# -- Compiling module RAM256X1S_HD717
+# -- Compiling module RAM256X1S_HD718
+# -- Compiling module RAM256X1S_HD719
+# -- Compiling module RAM256X1S_HD720
+# -- Compiling module RAM256X1S_HD721
+# -- Compiling module RAM256X1S_HD722
+# -- Compiling module RAM256X1S_HD723
+# -- Compiling module RAM256X1S_HD724
+# -- Compiling module RAM256X1S_HD725
+# -- Compiling module RAM256X1S_HD726
+# -- Compiling module RAM256X1S_HD727
+# -- Compiling module RAM256X1S_HD728
+# -- Compiling module RAM256X1S_HD729
+# -- Compiling module RAM256X1S_HD730
+# -- Compiling module RAM256X1S_HD731
+# -- Compiling module RAM256X1S_HD732
+# -- Compiling module RAM256X1S_HD733
+# -- Compiling module RAM256X1S_HD734
+# -- Compiling module RAM256X1S_HD735
+# -- Compiling module RAM256X1S_HD736
+# -- Compiling module RAM256X1S_HD737
+# -- Compiling module RAM256X1S_HD738
+# -- Compiling module RAM256X1S_HD739
+# -- Compiling module RAM256X1S_HD740
+# -- Compiling module RAM256X1S_HD741
+# -- Compiling module RAM256X1S_HD742
+# -- Compiling module RAM256X1S_HD743
+# -- Compiling module RAM256X1S_HD744
+# -- Compiling module RAM256X1S_HD745
+# -- Compiling module RAM256X1S_HD746
+# -- Compiling module RAM256X1S_HD747
+# -- Compiling module RAM256X1S_HD748
+# -- Compiling module RAM256X1S_HD749
+# -- Compiling module RAM256X1S_HD750
+# -- Compiling module RAM256X1S_HD751
+# -- Compiling module RAM256X1S_HD752
+# -- Compiling module RAM256X1S_HD753
+# -- Compiling module RAM256X1S_HD754
+# -- Compiling module RAM256X1S_HD755
+# -- Compiling module RAM256X1S_HD756
+# -- Compiling module RAM256X1S_HD757
+# -- Compiling module RAM256X1S_HD758
+# -- Compiling module RAM256X1S_HD759
+# -- Compiling module RAM256X1S_HD760
+# -- Compiling module RAM256X1S_HD761
+# -- Compiling module RAM256X1S_HD762
+# -- Compiling module RAM256X1S_HD763
+# -- Compiling module RAM256X1S_HD764
+# -- Compiling module RAM256X1S_HD765
+# -- Compiling module RAM256X1S_HD766
+# -- Compiling module RAM256X1S_HD767
+# -- Compiling module RAM256X1S_HD768
+# -- Compiling module RAM256X1S_HD769
+# -- Compiling module RAM256X1S_HD770
+# -- Compiling module RAM256X1S_HD771
+# -- Compiling module RAM256X1S_HD772
+# -- Compiling module RAM256X1S_HD773
+# -- Compiling module RAM256X1S_HD774
+# -- Compiling module RAM256X1S_HD775
+# -- Compiling module RAM256X1S_HD776
+# -- Compiling module RAM256X1S_HD777
+# -- Compiling module RAM256X1S_HD778
+# -- Compiling module RAM256X1S_HD779
+# -- Compiling module RAM256X1S_HD780
+# -- Compiling module imem
+# -- Compiling module DMEM
+# -- Compiling module IMEM
+# -- Compiling module IMEM_0
+# -- Compiling module cpu
+# -- Compiling module imem_HD522
+# -- Compiling module mux1
+# -- Compiling module mux2
+# -- Compiling module npcmaker
+# -- Compiling module pcreg
+# -- Compiling module regfile
+# -- Compiling module sccomp_dataflow
+# -- Compiling module imem_dist_mem_gen_v8_0_10
+# -- Compiling module imem_dist_mem_gen_v8_0_10_HD523
+# -- Compiling module imem_dist_mem_gen_v8_0_10_synth
+# -- Compiling module imem_dist_mem_gen_v8_0_10_synth_HD524
+# -- Compiling module imem_rom
+# -- Compiling module imem_rom_HD525
+# -- Compiling module glbl
+# -- Compiling module _246tb_ex9_tb
+# 
+# Top level modules:
+# 	glbl
+# 	_246tb_ex9_tb
+# End time: 05:23:57 on May 16,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 1
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 2153.023 ; gain = 0.000
+INFO: [USF-ModelSim-69] 'compile' step finished in '8' seconds
+INFO: [USF-ModelSim-4] ModelSim::Simulate design
+INFO: [USF-ModelSim-69] Executing 'SIMULATE' step in 'E:/github/cpu31/post_sim/project_1/project_1.sim/sim_1/synth/timing'
+Program launched (PID=48652)
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:11 . Memory (MB): peak = 2153.023 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 2153.023 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri May 16 05:25:33 2025...

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="imem_synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1747112066">
+<GenRun Id="imem_synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1747331643">
   <File Type="RDS-PROPCONSTRS" Name="imem_drc_synth.rpt"/>
   <File Type="PA-TCL" Name="imem.tcl"/>
   <File Type="RDS-RDS" Name="imem.vds"/>
@@ -35,9 +35,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
-      <Desc>Vivado Synthesis Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
     <Step Id="synth_design"/>
   </Strategy>
 </GenRun>
