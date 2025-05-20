@@ -321,9 +321,8 @@
 # ** Warning: (vsim-3316) No solution possible for some delayed timing check nets. 5504 negative limits were zeroed. Use +ntc_warn for more info.
 #    Time: 0 ps  Iteration: 0  Instance: /_246tb_ex9_tb File: ../../../../project_1.srcs/sim_1/new/top_tb.v
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-# 
-#           File in use by: 86182  Hostname: NICOLAS-AINSKI  ProcessID: 37324
-# 
+## End time: 16:17:58 on May 17,2025, Elapsed time: 0:08:54
+# Errors: 0, Warnings: 1
 #           Attempting to use alternate WLF file "./wlft7dssa3".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
 # 

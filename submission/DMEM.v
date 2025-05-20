@@ -16,7 +16,7 @@ reg [31:0] DMEM [0:2047];
 always @(posedge clk) begin
     if(CS) begin
         if(DM_W) begin
-            DMEM[DMEMaddr[12:2]] <= rt;
+            DMEM[DMEMaddr[12:2]] = rt;
         end
     end
 end

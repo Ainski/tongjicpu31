@@ -1,6 +1,11 @@
 @echo off
-set bin_path=D:\modelism\win32pe
-call %bin_path%/vsim  -c -do "do {_246tb_ex9_tb_compile.do}" -l compile.log
+set xv_path=D:\\Vivado\\2016.2\\bin
+echo "xvlog -m64 --relax -prj _246tb_ex9_tb_vlog.prj"
+call %xv_path%/xvlog  -m64 --relax -prj _246tb_ex9_tb_vlog.prj -log xvlog.log
+call type xvlog.log > compile.log
+echo "xvhdl -m64 --relax -prj _246tb_ex9_tb_vhdl.prj"
+call %xv_path%/xvhdl  -m64 --relax -prj _246tb_ex9_tb_vhdl.prj -log xvhdl.log
+call type xvhdl.log >> compile.log
 if "%errorlevel%"=="1" goto END
 if "%errorlevel%"=="0" goto SUCCESS
 :END

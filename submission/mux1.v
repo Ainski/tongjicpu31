@@ -4,15 +4,16 @@ module mux1 (
     input wire [31:0] NPCout,
     input wire [31:0] rs,
     input wire [1:0] M1,
-    output [31:0] mux1out
+    output reg [31:0] mux1out
 );
-//assign mux1out=
-//    (NPCout     &   !M1[0]&!M1[1])|//00
-//    (rs         &   M1[1]&!M1[0])|//10
-//    (jextend    &   !M1[1]&M1[0]);//01
 
-assign mux1out = 
-    (M1 == 2'b00)? NPCout :
-    (M1 == 2'b01)? jextend :
-    (M1 == 2'b10)?rs-32'h00400000:32'b0;
+always @(*) begin
+    case (M1)
+        2'b00: mux1out = NPCout;
+        2'b01: mux1out = jextend;
+        2'b10: mux1out = rs - 32'h00400000;
+        default: mux1out = 32'b0;
+    endcase
+end
+
 endmodule

@@ -1,15 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1747469495">
-  <File Type="RDS-PROPCONSTRS" Name="sccomp_dataflow_drc_synth.rpt"/>
-  <File Type="PA-TCL" Name="sccomp_dataflow.tcl"/>
-  <File Type="RDS-RDS" Name="sccomp_dataflow.vds"/>
-  <File Type="RDS-UTIL" Name="sccomp_dataflow_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="sccomp_dataflow_utilization_synth.pb"/>
-  <File Type="RDS-DCP" Name="sccomp_dataflow.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="sccomp_dataflow_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="sccomp_dataflow_timing_summary_synth.pb"/>
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1747725157">
+  <File Type="RDS-PROPCONSTRS" Name="seg7x16_drc_synth.rpt"/>
+  <File Type="PA-TCL" Name="seg7x16.tcl"/>
+  <File Type="RDS-RDS" Name="seg7x16.vds"/>
+  <File Type="RDS-UTIL" Name="seg7x16_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="seg7x16_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="seg7x16.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="seg7x16_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="seg7x16_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/IMEMtop.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/new/shamt_ext.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -115,13 +122,6 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/IMEM.v">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
     <File Path="$PSRCDIR/sources_1/new/cpu.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -130,6 +130,13 @@
       </FileInfo>
     </File>
     <File Path="$PSRCDIR/sources_1/new/top.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/seg7x16.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -152,13 +159,19 @@
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="sccomp_dataflow"/>
+      <Option Name="TopModule" Val="seg7x16"/>
       <Option Name="TopAutoSet" Val="TRUE"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
     <Filter Type="Constrs"/>
     <File Path="$PSRCDIR/constrs_1/new/cpu31.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/icf.xdc">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -174,4 +187,5 @@
     <Step Id="synth_design"/>
   </Strategy>
   <BlockFileSet Type="BlockSrcs" Name="imem"/>
+  <BlockFileSet Type="BlockSrcs" Name="divider"/>
 </GenRun>

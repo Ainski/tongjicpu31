@@ -1,6 +1,6 @@
 `timescale 1ns / 1ps
 module sccomp_dataflow(
-    input clk_in,
+    input clk,
     input reset,
     output [31:0] mux1out,
     output [31:0] NPCout,
@@ -53,6 +53,12 @@ module sccomp_dataflow(
     regfile8,regfile9,regfile10,regfile11,regfile12,regfile13,regfile14,regfile15,
     regfile16,regfile17,regfile18,regfile19,regfile20,regfile21,regfile22,regfile23,
     regfile24,regfile25,regfile26,regfile27,regfile28,regfile29,regfile30,regfile31
+);
+
+wire clk_in;
+divider divider_inst(
+    .clk_in1(clk),
+    .clk_out1(clk_in)
 );
 wire [31:0]pc_temp;
 assign pc=pc_temp+32'h00400000;

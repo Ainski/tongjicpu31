@@ -79,17 +79,14 @@ module regfile(
     assign regfile31 = array_reg[31];
 
     integer i;  // 声明循环变量
-    always @(posedge RF_RST) begin
-        if (RF_RST) begin
-            for (i = 0; i < 32; i=i+1) begin
-                array_reg[i] <= 32'h0;  // 复位所有寄存器
-            end
-        end
-    end
         
-    always @(posedge RF_CLK) begin
-        if (!RF_RST && RF_W && mux3out != 6'b0) begin  // 避免写入零寄存器
-            array_reg[mux3out] <= rdd;
+    always @(posedge RF_CLK or posedge RF_RST) begin
+        if (RF_RST) begin
+                for (i = 0; i < 32; i=i+1) begin
+                    array_reg[i] = 32'h0;  // 复位所有寄存器
+                end
+            end else if(RF_W && mux3out != 6'b0) begin  // 避免写入零寄存器
+            array_reg[mux3out] = rdd;
         end 
     end
     

@@ -1,0 +1,8 @@
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto ebb25405b8204d7690bd5745b8ac7c48 --debug typical --relax --mt 2 -L xil_defaultlib -L xpm -L dist_mem_gen_v8_0_10 -L unisims_ver -L unimacro_ver -L secureip --snapshot _246tb_ex9_tb_behav xil_defaultlib._246tb_ex9_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-426] cannot find port clk_in on this module [E:/github/cpu31/project_1/project_1.srcs/sim_1/new/top_tb.v:64]
+ERROR: [VRFC 10-426] cannot find port clk_in on this module [E:/github/cpu31/project_1/project_1.srcs/sim_1/new/top_tb.v:65]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
