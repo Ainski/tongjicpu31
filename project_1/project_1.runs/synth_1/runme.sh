@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log seg7x16.vds -m64 -mode batch -messageDb vivado.pb -notrace -source seg7x16.tcl
+EAStep vivado -log sccomp_dataflow.vds -m64 -mode batch -messageDb vivado.pb -notrace -source sccomp_dataflow.tcl

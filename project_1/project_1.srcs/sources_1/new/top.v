@@ -1,6 +1,6 @@
 `timescale 1ns / 1ps
 module sccomp_dataflow(
-    input clk,
+    input clk_in,
     input reset,
     output [31:0] mux1out,
     output [31:0] NPCout,
@@ -55,11 +55,11 @@ module sccomp_dataflow(
     regfile24,regfile25,regfile26,regfile27,regfile28,regfile29,regfile30,regfile31
 );
 
-wire clk_in;
-divider divider_inst(
-    .clk_in1(clk),
-    .clk_out1(clk_in)
-);
+//wire clk_in;
+//divider divider_inst(
+//    .clk_in1(clk),
+//    .clk_out1(clk_in)
+//);
 wire [31:0]pc_temp;
 assign pc=pc_temp+32'h00400000;
 assign RF_CLK = clk_in;

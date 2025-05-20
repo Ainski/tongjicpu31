@@ -1,8 +1,37 @@
 Vivado Simulator 2016.2
 Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
-Running: D:/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto ebb25405b8204d7690bd5745b8ac7c48 --debug typical --relax --mt 2 -L xil_defaultlib -L xpm -L dist_mem_gen_v8_0_10 -L unisims_ver -L unimacro_ver -L secureip --snapshot _246tb_ex9_tb_behav xil_defaultlib._246tb_ex9_tb xil_defaultlib.glbl -log elaborate.log 
+Running: D:/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto ebb25405b8204d7690bd5745b8ac7c48 --debug typical --relax --mt 2 -L xil_defaultlib -L xpm -L dist_mem_gen_v8_0_10 -L unisims_ver -L unimacro_ver -L secureip --snapshot seg7x16_behav xil_defaultlib.seg7x16 xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
-WARNING: [VRFC 10-426] cannot find port clk_in on this module [E:/github/cpu31/project_1/project_1.srcs/sim_1/new/top_tb.v:64]
-ERROR: [VRFC 10-426] cannot find port clk_in on this module [E:/github/cpu31/project_1/project_1.srcs/sim_1/new/top_tb.v:65]
-ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=9.125...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.divider_clk_wiz
+Compiling module xil_defaultlib.divider
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.controller
+Compiling module xil_defaultlib.DMEM
+Compiling module xil_defaultlib.imdt_ext
+Compiling module dist_mem_gen_v8_0_10.dist_mem_gen_v8_0_10(C_FAMILY="a...
+Compiling module xil_defaultlib.imem
+Compiling module xil_defaultlib.IMEM
+Compiling module xil_defaultlib.jextend
+Compiling module xil_defaultlib.mux1
+Compiling module xil_defaultlib.mux3
+Compiling module xil_defaultlib.mux4
+Compiling module xil_defaultlib.mux5
+Compiling module xil_defaultlib.mux6
+Compiling module xil_defaultlib.npcmaker
+Compiling module xil_defaultlib.pcreg
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.shamt_ext
+Compiling module xil_defaultlib.mux2
+Compiling module xil_defaultlib.cpu
+Compiling module xil_defaultlib.sccomp_dataflow
+Compiling module xil_defaultlib.seg7x16
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot seg7x16_behav

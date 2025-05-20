@@ -25,7 +25,7 @@
     <Option Name="IPUserFilesDir" Val="$PPRDIR/project_1.ip_user_files"/>
     <Option Name="IPStaticSourceDir" Val="$PPRDIR/project_1.ip_user_files/ipstatic"/>
     <Option Name="EnableBDX" Val="FALSE"/>
-    <Option Name="WTXSimLaunchSim" Val="159"/>
+    <Option Name="WTXSimLaunchSim" Val="160"/>
     <Option Name="WTModelSimLaunchSim" Val="20"/>
     <Option Name="WTQuestaLaunchSim" Val="0"/>
     <Option Name="WTIesLaunchSim" Val="0"/>
@@ -43,13 +43,6 @@
   <FileSets Version="1" Minor="31">
     <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
       <Filter Type="Srcs"/>
-      <File Path="$PSRCDIR/sources_1/new/IMEMtop.v">
-        <FileInfo>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
       <File Path="$PSRCDIR/sources_1/new/shamt_ext.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -155,6 +148,13 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
+      <File Path="$PSRCDIR/sources_1/new/IMEMtop.v">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <File Path="$PSRCDIR/sources_1/new/cpu.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -171,6 +171,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/new/seg7x16.v">
         <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -192,8 +193,7 @@
       </File>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
-        <Option Name="TopModule" Val="seg7x16"/>
-        <Option Name="TopAutoSet" Val="TRUE"/>
+        <Option Name="TopModule" Val="sccomp_dataflow"/>
       </Config>
     </FileSet>
     <FileSet Name="constrs_1" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
@@ -219,7 +219,6 @@
       <Filter Type="Srcs"/>
       <File Path="$PSRCDIR/sim_1/new/top_tb.v">
         <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -227,7 +226,7 @@
       </File>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
-        <Option Name="TopModule" Val="seg7x16"/>
+        <Option Name="TopModule" Val="_246tb_ex9_tb"/>
         <Option Name="TopLib" Val="xil_defaultlib"/>
         <Option Name="TransportPathDelay" Val="0"/>
         <Option Name="TransportIntDelay" Val="0"/>
@@ -250,10 +249,27 @@
     <FileSet Name="divider" Type="BlockSrcs" RelSrcDir="$PSRCDIR/divider">
       <File Path="$PSRCDIR/sources_1/ip/divider/divider.xci">
         <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
+        <CompFileExtendedInfo CompFileName="divider.xci" FileRelPathName="divider.xml"/>
+        <CompFileExtendedInfo CompFileName="divider.xci" FileRelPathName="divider_ooc.xdc"/>
+        <CompFileExtendedInfo CompFileName="divider.xci" FileRelPathName="divider_sim_netlist.vhdl"/>
+        <CompFileExtendedInfo CompFileName="divider.xci" FileRelPathName="clk_wiz_v5_3_1/mmcm_pll_drp_func_7s_pll.vh"/>
+        <CompFileExtendedInfo CompFileName="divider.xci" FileRelPathName="clk_wiz_v5_3_1/mmcm_pll_drp_func_7s_mmcm.vh"/>
+        <CompFileExtendedInfo CompFileName="divider.xci" FileRelPathName="divider.veo"/>
+        <CompFileExtendedInfo CompFileName="divider.xci" FileRelPathName="doc/clk_wiz_v5_3_changelog.txt"/>
+        <CompFileExtendedInfo CompFileName="divider.xci" FileRelPathName="divider_sim_netlist.v"/>
+        <CompFileExtendedInfo CompFileName="divider.xci" FileRelPathName="divider_stub.vhdl"/>
+        <CompFileExtendedInfo CompFileName="divider.xci" FileRelPathName="divider_clk_wiz.v"/>
+        <CompFileExtendedInfo CompFileName="divider.xci" FileRelPathName="clk_wiz_v5_3_1/mmcm_pll_drp_func_us_mmcm.vh"/>
+        <CompFileExtendedInfo CompFileName="divider.xci" FileRelPathName="divider.xdc"/>
+        <CompFileExtendedInfo CompFileName="divider.xci" FileRelPathName="divider_stub.v"/>
+        <CompFileExtendedInfo CompFileName="divider.xci" FileRelPathName="divider.v"/>
+        <CompFileExtendedInfo CompFileName="divider.xci" FileRelPathName="clk_wiz_v5_3_1/mmcm_pll_drp_func_us_pll.vh"/>
+        <CompFileExtendedInfo CompFileName="divider.xci" FileRelPathName="divider_board.xdc"/>
       </File>
       <Config>
         <Option Name="TopModule" Val="divider"/>
@@ -286,11 +302,12 @@
     </Simulator>
   </Simulators>
   <Runs Version="1" Minor="10">
-    <Run Id="synth_1" Type="Ft3:Synth" SrcSet="sources_1" Part="xc7a100tcsg324-1" ConstrsSet="constrs_1" Description="Vivado Synthesis Defaults" State="current" IncludeInArchive="true">
+    <Run Id="synth_1" Type="Ft3:Synth" SrcSet="sources_1" Part="xc7a100tcsg324-1" ConstrsSet="constrs_1" Description="Vivado Synthesis Defaults" State="current" Dir="$PRUNDIR/synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
         <Step Id="synth_design"/>
       </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
     </Run>
     <Run Id="imem_synth_1" Type="Ft3:Synth" SrcSet="imem" Part="xc7a100tcsg324-1" ConstrsSet="imem" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/imem_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">

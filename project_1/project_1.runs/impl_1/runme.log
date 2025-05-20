@@ -1,4 +1,0 @@
-
-*** Running vivado
-    with args -log sccomp_dataflow.vdi -applog -m64 -messageDb vivado.pb -mode batch -source sccomp_dataflow.tcl -notrace
-

@@ -54,7 +54,7 @@ module cpu(
     regfile24,regfile25,regfile26,regfile27,regfile28,regfile29,regfile30,regfile31
 );
 
-// 声明内部wire信号（原output变为wire并加_t后缀）
+// 声明内部wire信号（原output变为wire并加_t后缀�?
 wire [31:0] mux1out_t;
 wire [31:0] NPCout_t;
 wire [31:0] a_t;
@@ -96,7 +96,7 @@ wire [31:0] regfile0_t,regfile1_t,regfile2_t,regfile3_t,regfile4_t,regfile5_t,re
             regfile16_t,regfile17_t,regfile18_t,regfile19_t,regfile20_t,regfile21_t,regfile22_t,regfile23_t,
             regfile24_t,regfile25_t,regfile26_t,regfile27_t,regfile28_t,regfile29_t,regfile30_t,regfile31_t;
 
-// 将内部wire信号赋值给模块输出端口
+// 将内部wire信号赋�?�给模块输出端口
 assign mux1out = mux1out_t;
 assign NPCout = NPCout_t;
 assign a = a_t;
@@ -166,7 +166,7 @@ assign regfile29 = regfile29_t;
 assign regfile30 = regfile30_t;
 assign regfile31 = regfile31_t;
 
-// 实例化模块并连接内部wire信号（后缀_t）
+// 实例化模块并连接内部wire信号（后�?_t�?
 alu alu_inst(
     .a(a_t),
     .aluc(aluc_t),
@@ -197,34 +197,12 @@ controller controller_inst(
     .su(su_t)
 );
 
-DMEM dmem_inst(
-    .CS(CS_t),
-    .DM_R(DM_R_t),
-    .DM_W(DM_W_t),
-    .DMEMaddr(r_t),
-    .DMEMdata(DMEMdata),
-    .clk(clk),
-    .rt(rt_t)
-);
+
 
 imdt_ext imdt_ext_inst(
     .imdt(imdt_t),
     .imdtT(imdtT),
     .su(su_t)
-);
-
-IMEM imem_inst(
-    .IM_R(IM_R_t),
-    .address(pc_t),
-    .func(func),
-    .index(index),
-    .instr(instr),
-    .imdtT(imdtT),
-    .op(op),
-    .rdc(rdc),
-    .rsc(rsc),
-    .rtc(rtc),
-    .shamtT(shamtT)
 );
 
 jextend jextend_inst(

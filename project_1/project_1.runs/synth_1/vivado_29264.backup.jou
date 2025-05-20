@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Tue May 20 15:54:21 2025
+# Process ID: 29264
+# Current directory: E:/github/cpu31/project_1/project_1.runs/synth_1
+# Command line: vivado.exe -log seg7x16.vds -mode batch -messageDb vivado.pb -notrace -source seg7x16.tcl
+# Log file: E:/github/cpu31/project_1/project_1.runs/synth_1/seg7x16.vds
+# Journal file: E:/github/cpu31/project_1/project_1.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source seg7x16.tcl -notrace

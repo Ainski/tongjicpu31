@@ -62,7 +62,7 @@ module _246tb_ex9_tb;
         regfile24,regfile25,regfile26,regfile27,regfile28,regfile29,regfile30,regfile31;
 	// Instantiate the Unit Under Test (UUT)
 	sccomp_dataflow uut (
-		.clk(clk_in), 
+		.clk_in(clk_in), 
 		.reset(reset), 
 		.inst(inst),
 		.pc(pc),
