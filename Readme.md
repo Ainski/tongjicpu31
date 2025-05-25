@@ -112,15 +112,13 @@
 | jal    | 000011   | address |        |           |       |        |  jal 10000      |  $31<-PC+4; goto 10000           |  $31<-PC+4；PC <-   (PC+4)[31..28],address,0,0   ；address=10000/4                  |
 
 
-# CPU数据通路设计
-
 ## 每条指令的数据通路图
 特别说明，为了减少工作量，提高文档阅读效率，考虑将数据通路相同的指令合并展示。
 
 ### add数据通路
 在本节，与add数据通路相同的指令包括：add、addu、sub、subu、and、or、xor、nor、slt、sltu、sllv、srlv、srav。  
 数据通路如下：  
-![add数据通路](document/tongji-undergrad-thesis/figures/add.png)  
+![add数据通路](figures/add.png)  
 **图1 add数据通路**  
 
 在运行add的过程中，会执行如下动作：  
@@ -142,7 +140,7 @@
 ### sll数据通路
 在本节当中，与sll数据通路相同的指令包括：srl、sra。  
 数据通路如下：  
-![sll数据通路](document/tongji-undergrad-thesis/figures/sll.png)  
+![sll数据通路](figures/sll.png)  
 **图2 sll数据通路**  
 
 在运行sll的过程中，会执行如下动作：  
@@ -164,7 +162,7 @@
 ### jr数据通路
 在本节中，jr拥有特别的数据通路。  
 数据通路如下：  
-![jr数据通路](document/tongji-undergrad-thesis/figures/jr.png)  
+![jr数据通路](figures/jr.png)  
 **图3 jr数据通路**  
 
 在执行jr指令的过程中，会执行如下操作：  
@@ -181,7 +179,7 @@
 在本节，与add数据通路相同的指令包括：addi、addiu、ori、xori。  
 需要特别说明的是，在MIPS指令架构下，addiu作的是有符号拓展。  
 数据通路如下：  
-![addi数据通路](document/tongji-undergrad-thesis/figures/addi.png)  
+![addi数据通路](figures/addi.png)  
 **图4 addi数据通路**  
 
 在运行addi的过程中，会执行如下动作：  
@@ -203,7 +201,7 @@
 ### lw数据通路
 lw拥有独特的数据通路。  
 数据通路如下：  
-![lw数据通路](document/tongji-undergrad-thesis/figures/lw.png)  
+![lw数据通路](figures/lw.png)  
 **图5 lw数据通路**  
 
 在运行lw的过程中，会执行如下动作：  
@@ -226,7 +224,7 @@ lw拥有独特的数据通路。
 ### sw数据通路
 sw拥有独特的数据通路。  
 数据通路如下：  
-![sw数据通路](document/tongji-undergrad-thesis/figures/sw.png)  
+![sw数据通路](figures/sw.png)  
 **图6 sw数据通路**  
 
 在运行sw的过程中，会执行如下动作：  
@@ -249,7 +247,7 @@ sw拥有独特的数据通路。
 ### beq数据通路
 beq拥有独特的数据通路。  
 数据通路如下：  
-![beq数据通路](document/tongji-undergrad-thesis/figures/beq.png)  
+![beq数据通路](figures/beq.png)  
 **图7 beq数据通路**  
 
 在运行beq的过程中，会执行如下动作：  
@@ -272,7 +270,7 @@ beq拥有独特的数据通路。
 ### bne数据通路
 bne拥有独特的数据通路。  
 数据通路如下：  
-![bne数据通路](document/tongji-undergrad-thesis/figures/bne.png)  
+![bne数据通路](figures/bne.png)  
 **图8 bne数据通路**  
 
 在运行bne的过程中，会执行如下动作：  
@@ -295,7 +293,7 @@ bne拥有独特的数据通路。
 ### lui数据通路
 lui拥有独特的数据通路。  
 数据通路如下：  
-![lui数据通路](document/tongji-undergrad-thesis/figures/lui.png)  
+![lui数据通路](figures/lui.png)  
 **图9 lui数据通路**  
 
 在运行lui的过程中，会执行如下动作：  
@@ -315,7 +313,7 @@ lui拥有独特的数据通路。
 ### j数据通路
 j拥有独特的数据通路。  
 数据通路如下：  
-![j数据通路](document/tongji-undergrad-thesis/figures/j.png)  
+![j数据通路](figures/j.png)  
 **图10 j数据通路**  
 
 在运行j的过程中，会执行如下动作：  
@@ -331,7 +329,7 @@ j拥有独特的数据通路。
 ### jal数据通路
 jal拥有独特的数据通路。  
 数据通路如下：  
-![jal数据通路](document/tongji-undergrad-thesis/figures/jal.png)  
+![jal数据通路](figures/jal.png)  
 **图11 jal数据通路**  
 
 在运行jal的过程中，会执行如下动作：  
@@ -348,5 +346,5 @@ jal拥有独特的数据通路。
 
 ### 整体数据通路
 数据通路如下：  
-![整体数据通路](document/tongji-undergrad-thesis/figures/all.png)  
+![整体数据通路](figures/all.png)  
 **图12 整体数据通路**  
