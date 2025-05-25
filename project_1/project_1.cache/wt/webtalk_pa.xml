@@ -3,7 +3,7 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pa" timeStamp="Tue May 20 16:09:29 2025">
+<application name="pa" timeStamp="Tue May 20 19:37:23 2025">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="0e2fc05af14443789c5ec0230973fbb8" type="ProjectID"/>
 <property name="ProjectIteration" value="6" type="ProjectIteration"/>
@@ -32,29 +32,63 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="OpenRecentTarget" value="1" type="JavaHandler"/>
 <property name="ProjectSettingsCmdHandler" value="11" type="JavaHandler"/>
 <property name="RecustomizeCore" value="8" type="JavaHandler"/>
-<property name="ReportTimingSummary" value="8" type="JavaHandler"/>
+<property name="ReportTimingSummary" value="14" type="JavaHandler"/>
 <property name="RunBitgen" value="4" type="JavaHandler"/>
 <property name="RunImplementation" value="1" type="JavaHandler"/>
-<property name="RunSynthesis" value="37" type="JavaHandler"/>
+<property name="RunSynthesis" value="38" type="JavaHandler"/>
 <property name="SaveDesign" value="3" type="JavaHandler"/>
 <property name="SaveFileProxyHandler" value="6" type="JavaHandler"/>
 <property name="SetTopNode" value="3" type="JavaHandler"/>
-<property name="ShowView" value="10" type="JavaHandler"/>
+<property name="ShowView" value="11" type="JavaHandler"/>
 <property name="SimulationClose" value="13" type="JavaHandler"/>
 <property name="SimulationRestart" value="20" type="JavaHandler"/>
 <property name="SimulationRun" value="73" type="JavaHandler"/>
 <property name="SimulationRunAll" value="15" type="JavaHandler"/>
 <property name="SimulationRunForTime" value="118" type="JavaHandler"/>
-<property name="ViewLayoutCmd" value="1" type="JavaHandler"/>
+<property name="ViewLayoutCmd" value="2" type="JavaHandler"/>
 <property name="ViewTaskProjectManager" value="35" type="JavaHandler"/>
 <property name="ViewTaskRTLAnalysis" value="1" type="JavaHandler"/>
 <property name="ViewTaskSimulation" value="9" type="JavaHandler"/>
-<property name="ViewTaskSynthesis" value="13" type="JavaHandler"/>
+<property name="ViewTaskSynthesis" value="14" type="JavaHandler"/>
 <property name="XdcCreateClock" value="1" type="JavaHandler"/>
 </item>
 <item name="Gui Resources Info">
+<property name="PAResourceAtoD.ClockCreationPanel_ENTER_POSITIVE_NUMBER, 10.0" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.ClockCreationPanel_ENTER_POSITIVE_NUMBER, 20.0" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.ClockCreationPanel_ENTER_POSITIVE_NUMBER, 25.0" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.CmdMsgDialog_OK, OK" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.CommandOutputOptionsPanel_CHOOSE_OUTPUT_FILE_FOR_TIMING_REPORT, E:\github\cpu31\report.tx" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.CommandOutputOptionsPanel_CHOOSE_OUTPUT_FILE_FOR_TIMING_REPORT, E:\github\cpu31\report.txt" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.CommandOutputOptionsPanel_WRITE_RESULTS_TO_FILE, Write results to file:, true" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.DesignTimingSumSectionPanel_WORST_NEGATIVE_SLACK, 44.366 ns" value="1" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_GOTO_NETLIST_DESIGN, Open Synthesized Design" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.EditCreateClockTablePanel_EDIT_CREATE_CLOCK_TABLE, 1 ; clk_pin ; 10.0 ; 0.0 ; 5.0 ; false ; [get_ports clk_in] ; E:/github/cpu31/project_1/project_1.srcs/constrs_1/new/cpu31.xdc ;  ; , 0, 10.0, 2" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.EditCreateClockTablePanel_EDIT_CREATE_CLOCK_TABLE, 1 ; clk_pin ; 10.0 ; 0.0 ; 5.0 ; false ; [get_ports clk_in] ; E:/github/cpu31/project_1/project_1.srcs/constrs_1/new/cpu31.xdc ;  ; , 0, 10.0, 2, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.EditCreateClockTablePanel_EDIT_CREATE_CLOCK_TABLE, 1 ; clk_pin ; 20.0 ; 0.0 ; 10.0 ; false ; [get_ports clk_in] ; E:/github/cpu31/project_1/project_1.srcs/constrs_1/new/cpu31.xdc ;  ; , 0, 20.0, 2" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.EditCreateClockTablePanel_EDIT_CREATE_CLOCK_TABLE, 1 ; clk_pin ; 20.0 ; 0.0 ; 10.0 ; false ; [get_ports clk_in] ; E:/github/cpu31/project_1/project_1.srcs/constrs_1/new/cpu31.xdc ;  ; , 0, 20.0, 2, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.EditCreateClockTablePanel_EDIT_CREATE_CLOCK_TABLE, 1 ; clk_pin ; 40.0 ; 0.0 ; 20.0 ; false ; [get_ports clk_in] ; E:/github/cpu31/project_1/project_1.srcs/constrs_1/new/cpu31.xdc ;  ; , 0, 20.0, 4" value="3" type="GuiResourceData"/>
+<property name="PAResourceEtoH.EditCreateClockTablePanel_EDIT_CREATE_CLOCK_TABLE, 1 ; clk_pin ; 40.0 ; 0.0 ; 20.0 ; false ; [get_ports clk_in] ; E:/github/cpu31/project_1/project_1.srcs/constrs_1/new/cpu31.xdc ;  ; , 0, 20.0, 4, false, false, false, false, true" value="2" type="GuiResourceData"/>
+<property name="PAResourceEtoH.EditCreateClockTablePanel_EDIT_CREATE_CLOCK_TABLE, 1 ; clk_pin ; 40.0 ; 0.0 ; 20.0 ; false ; [get_ports clk_in] ; E:/github/cpu31/project_1/project_1.srcs/constrs_1/new/cpu31.xdc ;  ; , 0, 40.0, 2" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.EditCreateClockTablePanel_EDIT_CREATE_CLOCK_TABLE, 2 ; clk_pin ; 100.0 ; 0.0 ; 50.0 ; false ; [get_ports clk_in] ; E:/github/cpu31/project_1/project_1.srcs/sources_1/new/icf.xdc ;  ; , 1, 0.0, 3, false, false, false, true, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.EditCreateClockTablePanel_EDIT_CREATE_CLOCK_TABLE, 20.0, 0, Fall At (ns" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.EditCreateClockTablePanel_EDIT_CREATE_CLOCK_TABLE, 40.0, 0, Period (ns" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.EditXdcSelectableTablePanel_REMOVE_CONSTRAINT, Remove Constraint" value="1" type="GuiResourceData"/>
 <property name="PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, [, Synthesis, Run Synthesis], 14, false" value="1" type="GuiResourceData"/>
-<property name="PAResourceQtoS.StateMonitor_CANCEL, Cancel" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, [, Synthesis, Synthesized Design, Edit Timing Constraints], 17, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, [, Synthesis, Synthesized Design, Report Timing Summary], 19, false" value="6" type="GuiResourceData"/>
+<property name="PAResourceItoN.LogPanel_LOG_NAVIGATOR, [Out-of-Context Module Runs], 2, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceItoN.LogPanel_LOG_NAVIGATOR, [Out-of-Context Module Runs], 3, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceItoN.LogPanel_LOG_NAVIGATOR, [Out-of-Context Module Runs], 3, false, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, [Root, Design Timing Summary], 2, false" value="2" type="GuiResourceData"/>
+<property name="PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, [Root, Design Timing Summary], 2, false, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="PAResourceOtoP.PAViews_PACKAGE, Package" value="1" type="GuiResourceData"/>
+<property name="PAResourceQtoS.ReportTimingSummaryDialog_REPORT_TIMING_SUMMARY_DIALOG_TABBED, PAResourceQtoS.ReportTimingSummaryDialog_ADVANCED, Advanced, 1" value="5" type="GuiResourceData"/>
+<property name="PAResourceQtoS.ReportTimingSummaryDialog_REPORT_TIMING_SUMMARY_DIALOG_TABBED, PAResourceQtoS.ReportTimingSummaryDialog_OPTIONS, Options, 0" value="2" type="GuiResourceData"/>
+<property name="PAResourceQtoS.ReportTimingSummaryDialog_REPORT_TIMING_SUMMARY_DIALOG_TABBED, PAResourceTtoZ.TimingDialogUtils_TIMER_SETTINGS, Timer Settings, 2" value="1" type="GuiResourceData"/>
+<property name="PAResourceTtoZ.XdcEditorView_APPLY_ALL_CHANGES_TO_XDC_CONSTRAINTS, Apply" value="4" type="GuiResourceData"/>
+<property name="RDIResource.BaseDialogUtils_OPEN_IN_SPECIFIED_LAYOUT, Open in Timing Analysis layout, true" value="1" type="GuiResourceData"/>
+<property name="RDIResource.BaseDialog_OK, OK" value="11" type="GuiResourceData"/>
+<property name="RDIResource.BaseReportTab_RERUN, Rerun" value="2" type="GuiResourceData"/>
 </item>
 <item name="Other">
 <property name="GuiMode" value="232" type="GuiMode"/>
